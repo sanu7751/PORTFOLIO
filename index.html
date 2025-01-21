@@ -95,7 +95,7 @@
   
 
 
-<section id="age-section" class="container" >
+<section id="age-section" data-aos="fade-right" >
   <div class="age-content" >
     <h1>Age:</h1>
     <p id="age">Born on 24th July 2004.</p>
@@ -112,7 +112,7 @@
 
 
 
-<section id="skills-section" class="container">
+<section id="skills-section" >
   <h1 class="text-center" data-aos="fade-up">Skills & Expertise</h1>
   <p class="text-center" data-aos="fade-up" data-aos-delay="100">
     I am proficient in a wide range of technologies and tools that help me build efficient, scalable, and modern applications.
@@ -192,8 +192,31 @@
 
 
 
-
-
+<section id="projects" class="projects-section" data-aos="fade-right">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel" id="carousel">
+        <div class="carousel-card">
+          <h3>House Price Prediction</h3>
+          <p>Developed a model to predict house prices using area, bedrooms, square feet, and bathrooms with 85% accuracy.</p>
+        </div>
+        <div class="carousel-card">
+          <h3>Financial Management System</h3>
+          <p>Created a system to manage client portfolios and finances effectively.</p>
+        </div>
+        <div class="carousel-card">
+          <h3>Voice Recognition System</h3>
+          <p>Built a system capable of recognizing and analyzing voice commands.</p>
+        </div>
+        <div class="carousel-card">
+          <h3>Student Management System</h3>
+          <p>Designed a platform for managing student records, including CRUD operations for admins.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -294,6 +317,58 @@ function scrollToTop() {
 }
 
 </script>
+
+
+
+
+
+
+<script>
+  const carousel = document.querySelector('#carousel');
+  let isDragging = false;
+  let startX, scrollLeft, autoScrollInterval;
+
+  // Drag Scroll
+  carousel.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    carousel.classList.add('dragging');
+  });
+
+  carousel.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll faster
+    carousel.scrollLeft = scrollLeft - walk;
+  });
+
+  carousel.addEventListener('mouseup', () => {
+    isDragging = false;
+    carousel.classList.remove('dragging');
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    isDragging = false;
+    carousel.classList.remove('dragging');
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
