@@ -184,8 +184,7 @@ body {
   line-height: 1.8;
   margin-bottom: 30px;
   animation: fade-in 7s ease-in-out;
-  font-family: 'Courier New', monospace;
-  font-weight: 550;
+  font-family: Calibri, sans-serif;
 }
 
 #about-section .btn-primary {
@@ -471,14 +470,7 @@ body.loaded #main-content {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   z-index: 1000;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
-.scroll-to-top:hover {
-  background-color: #003bfe;
-  transform: scale(1.1);
-}
-
 .scroll-to-top:active {
   transform: scale(0.95);
 }
@@ -492,7 +484,79 @@ body.loaded #main-content {
 @media (max-width: 768px) {
   .scroll-to-top {
     bottom: 100px;
-    right: 20px;
+    right: 30px;
     padding: 10px;
   }
 }
+
+
+
+
+
+/* Skills Section Styling */
+/* Skills Section Styling */
+#skills-section {
+  background-color: white; /* Light grey background */
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#skills-section h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #2c3e50; /* Dark color for headings */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#skills-section p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#skills-section .row {
+  margin-top: 30px;
+}
+
+#skills-section .col-md-4 {
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#skills-section .col-md-4:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+#skills-section i {
+  font-size: 50px; /* Large icons */
+  color: #3498db; /* Your website's primary blue */
+  margin-bottom: 15px;
+}
+
+#skills-section h4 {
+  font-size: 20px;
+  color: #34495e; /* Complementary dark color */
+  margin-bottom: 10px;
+}
+
+#skills-section p {
+  font-size: 14px;
+  color: #777;
+}
+#skills-section .btn-primary {
+  background-color: #3498db; /* Same blue as the other elements */
+  border: none;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+#skills-section .btn-primary:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
