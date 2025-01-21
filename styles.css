@@ -12,6 +12,7 @@ body {
   color: #000000 !important; 
   font-weight: bolder;
   font-family: 'Courier New', monospace; 
+  letter-spacing: 3px;
 }
 .nav-link {
   position: relative;
@@ -379,20 +380,23 @@ body.loaded #main-content {
   border-radius: 5px;
   margin: 0px auto;
   width: 100%;
+  font-family: calibri,sans-serif;
 }
 
 .age-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #2c3e50; /* Dark color for headings */
+  text-transform: uppercase;
+  letter-spacing: 2px;
   animation: fade-in-down 1.5s ease;
-  color: #333; /* Ensure the heading has dark text for better readability */
 }
 
 .age-content p {
   font-size: 1.5rem;
   margin: 10px 0;
   color: #555; /* Slightly lighter color for paragraphs */
+  letter-spacing: 2px;
 }
 
 .counter {
@@ -583,10 +587,11 @@ body.loaded #main-content {
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 30px;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #2c3e50; /* Dark color for headings */
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Carousel Wrapper */
