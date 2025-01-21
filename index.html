@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanu's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="splash-text">Namaste!</div>
+<div id="main-content">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" data-aos="fade-down">
+        <img src="logo.webp" alt="Logo" style="width: 30px; height: 30px; margin-right: 10px;"> <!-- Add your logo here -->
+        PORTFOLIO
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar second-navbar">
+    <div class="container">
+      <div class="silver-block"></div>
+      <span class="navbar-brand" data-aos="fade-right">SANU KUMAR PANDA</span>
+      <div class="social-icons"data-aos="fade-left">
+        <a href="https://github.com/your-github-username" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/your-linkedin-username/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/your-instagram-username/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Feedback Button Container -->
+<!-- Feedback Button -->
+<a href="https://wa.me/7205343991" class="feedback-btn" target="_blank">
+  <span class="feedback-btn-text">Feedback</span> <!-- Feedback Text -->
+  <i class="fab fa-whatsapp feedback-btn-icon"></i> <!-- WhatsApp Icon -->
+</a>
+
+  
+
+
+
+<section id="about-section">
+  <div class="container s" data-aos="fade-up">
+    <div class="content">
+      <h1>Hello!</h1>
+      <h4> I Am Sanu, Welcome to My Portfolio</h4>
+      <p>
+        I am passionate about web development and constantly learning new technologies to create stunning, user-friendly websites. Let's explore my work and connect!
+      </p>
+      <a href="#contact" class="btn btn-primary">RESUME ---></a>
+    </div>
+    <div class="image">
+      <img src="sanu1.png" alt="Sanu" />
+    </div>
+  </div>
+</section>
+<br><br>
+<br>
+
+  
+
+
+<section id="age-section" class="container" >
+  <div class="age-content" >
+    <h1>Age and Time Since Birth</h1>
+    <p id="age">Born on 24th July 2004.</p>
+    <p id="time-since">Time elapsed since your birth:</p>
+    <div class="counter" data-aos="fade-up">
+      <p ><span id="years">0</span> Years</p>
+      <p ><span id="days">0</span> Days</p>
+      <p ><span id="hours">0</span> Hours</p>
+      <p ><span id="minutes">0</span> Minutes</p>
+      <p ><span id="seconds">0</span> Seconds</p>
+    </div>
+  </div>
+</section>
+
+
+
+</div>
+  <script src="Script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+
+  
+  <script>
+     window.addEventListener('load', function () {
+      setTimeout(function () {
+        document.body.classList.add('loaded');
+        AOS.init({
+          duration: 1000,
+          once: false,
+        });
+      }, 3000); // Reduced to 3s (splash animation duration)
+    });
+  </script>
+
+
+
+
+  <script>
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    document.addEventListener('click', function (e) {
+    const toggleButton = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+    if (!navbarCollapse.contains(e.target) && !toggleButton.contains(e.target)) {
+      navbarCollapse.classList.remove('show');
+      toggleButton.classList.add('collapsed');
+    }});
+  </script>
+
+
+<script>
+  function updateCounter() {
+    const birthDate = new Date('2004-07-24T00:00:00');
+    const now = new Date();
+    const diff = now - birthDate;
+
+    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24)) % 365;
+    const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+    const minutes = Math.floor(diff / (1000 * 60)) % 60;
+    const seconds = Math.floor(diff / 1000) % 60;
+
+    document.getElementById('years').textContent = years;
+    document.getElementById('days').textContent = days;
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = minutes;
+    document.getElementById('seconds').textContent = seconds;
+  }
+
+  // Update the counter every second
+  setInterval(updateCounter, 1000);
+  updateCounter(); // Initial update
+</script>
+
+
+
+</body>
+</html>
