@@ -3,6 +3,7 @@ body {
   color: #000000; 
   height: 100%; /* Ensure full height */
   overflow-x: hidden;
+  letter-spacing: 2px;
 }
 .navbar {
   background-color: white; 
@@ -12,7 +13,7 @@ body {
   color: #000000 !important; 
   font-weight: bolder;
   font-family: 'Courier New', monospace; 
-  letter-spacing: 3px;
+  letter-spacing: 3px !important;
 }
 .nav-link {
   position: relative;
