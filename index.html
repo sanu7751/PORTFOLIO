@@ -63,6 +63,13 @@
   <i class="fab fa-whatsapp feedback-btn-icon"></i> <!-- WhatsApp Icon -->
 </a>
 
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome icon -->
+</button>
+
+
   
 
 
@@ -71,7 +78,7 @@
   <div class="container s" data-aos="fade-up">
     <div class="content">
       <h1>Hello!</h1>
-      <h4> I Am Sanu, Welcome to My Portfolio</h4>
+      <h4> I'm Sanu, Welcome to My Portfolio</h4>
       <p>
         I am passionate about web development and constantly learning new technologies to create stunning, user-friendly websites. Let's explore my work and connect!
       </p>
@@ -90,9 +97,9 @@
 
 <section id="age-section" class="container" >
   <div class="age-content" >
-    <h1>Age and Time Since Birth</h1>
+    <h1>Age </h1>
     <p id="age">Born on 24th July 2004.</p>
-    <p id="time-since">Time elapsed since your birth:</p>
+    <p id="time-since">Time elapsed since my birth:</p>
     <div class="counter" data-aos="fade-up">
       <p ><span id="years">0</span> Years</p>
       <p ><span id="days">0</span> Days</p>
@@ -164,6 +171,29 @@
   updateCounter(); // Initial update
 </script>
 
+
+
+<script>
+  const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+// Show or hide the button on scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = 'flex'; // Show the button
+  } else {
+    scrollToTopButton.style.display = 'none'; // Hide the button
+  }
+});
+
+// Scroll to the top function
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+
+</script>
 
 
 </body>
