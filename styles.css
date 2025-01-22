@@ -153,7 +153,7 @@ body {
   }
 
   .btn-primary {
-    margin-top: 10px; /* Add spacing above the button */
+    margin-top: 15px; /* Add spacing above the button */
   }
 }
 @media (min-width: 769px) {
@@ -569,6 +569,22 @@ body.loaded #main-content {
 
 #skills-section .btn-primary:hover {
   background-color: #2980b9; /* Darker blue on hover */
+}
+@media (max-width: 768px) {
+  #skills-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+  }
+
+  #skills-section .col-md-4 {
+    flex: 0 0 48%; /* Each card takes approximately half the width */
+    margin-bottom: 20px; /* Add some spacing between rows */
+  }
+
+  #skills-section .col-md-4:nth-child(odd) {
+    margin-right: 4%; /* Add spacing between cards in the same row */
+  }
 }
 
 
