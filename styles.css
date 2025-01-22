@@ -149,7 +149,7 @@ body {
   .image {
     max-width: 100%; /* Image section takes full width */
     margin-bottom: 20px; /* Add spacing below the image */
-    margin-top: 30px; /* Remove unnecessary top margin */
+    margin-top: 50px; /* Remove unnecessary top margin */
   }
 
   .btn-primary {
