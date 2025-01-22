@@ -12,7 +12,7 @@ body {
   color: #000000 !important; 
   font-weight: bolder;
   font-family: 'Courier New', monospace; 
-  letter-spacing: 3px !important;
+  letter-spacing: 3px;
 }
 .nav-link {
   position: relative;
@@ -20,7 +20,6 @@ body {
   padding: 0.5rem 1rem;
   color: #000000; 
   transition: color 0.3s ease;
-  letter-spacing: 2px;
 }
 .nav-link::after {
   content: '';
@@ -65,7 +64,6 @@ body {
   width: 100%;
   background-color: rgb(122, 126, 255);
   z-index: 5;
-  letter-spacing: 2px;
 }
 .social-icons a {
   margin-left: 10px;
@@ -103,75 +101,94 @@ body {
 
 
 #about-section {
-  padding: 5px 10px;
+  padding: 50px 80px;
   background-color: rgb(255, 255, 255);
-  text-align: start;
+  text-align: left;
   font-family: 'Roboto', sans-serif;
   margin-top: 100px;
 }
 
 .s {
-  display: flex;  /* Apply flex layout */
-  justify-content: space-between;  /* Space between content and image */
-  align-items: center;  /* Vertically center align */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
-  max-width: 50%;
+  max-width: 55%;
 }
 
 .image {
-  max-width: 45%;  /* Image section width */
+  max-width: 35%;
 }
 
 #about-section img {
-  width: 100%;  /* Make the image take the full container width */
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  object-fit: cover;
 }
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button i {
+  margin-right: 10px; /* Add space between the icon and text */
+}
+
+.resume-button:hover {
+  background-color: #45a049;
+}
+
 @media (max-width: 768px) {
   #about-section {
-    text-align: center; /* Center-align content on small screens */
+    text-align: center;
   }
 
   .s {
-    flex-direction: column; /* Stack content and image vertically */
-    align-items: center; /* Center-align both content and image */
+    flex-direction: column;
+    align-items: center;
   }
 
   .content {
-    max-width: 100%; /* Content section takes full width on small screens */
+    max-width: 100%;
     margin-bottom: 20px;
-    margin-top: 30px;
-    order: -1; /* Move content before the image */
+    margin-top: 40px;
+    order: -1;
   }
 
   .image {
-    max-width: 100%; /* Image section takes full width */
-    margin-bottom: 20px; /* Add spacing below the image */
-    margin-top: 50px; /* Remove unnecessary top margin */
-  }
-
-  .btn-primary {
-    margin-top: 15px; /* Add spacing above the button */
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
+
 @media (min-width: 769px) {
   .content {
-    margin-left: 100px;  /* Add margin on the left side of the content */
+    margin-left: 50px;
   }
+
   .image {
-    margin-top: 20px;  /* Add margin on the left side of the image */
+    margin-top: 20px;
   }
 }
+
 #about-section h1 {
   font-size: 5rem;
   color: rgb(71, 75, 181);
   margin-bottom: 20px;
   font-weight: bolder;
   animation: fade-in-down 3s ease-in-out;
-  font-family: Georgia, serif !important;
-  letter-spacing: 2px;
 }
 
 #about-section h4 {
@@ -180,56 +197,14 @@ body {
   font-size: 2rem;
   color: #333;
   animation: fade-in 7s ease-in-out;
-  letter-spacing: 2px;
 }
 
 #about-section p {
   font-size: 1rem;
   color: #333;
-  
+  line-height: 1.8;
   margin-bottom: 30px;
   animation: fade-in 7s ease-in-out;
-  font-family: Calibri, sans-serif;
-}
-
-#about-section .btn-primary {
-  background-color: rgb(49, 51, 125);
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: 2px solid transparent;
-  border-radius: 25px;
-  position: relative;
-  overflow: hidden;
-  
-  z-index: 1;
-  letter-spacing: 2px;
-}
-
-#about-section .btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(106, 68, 201);
-  transition: left 0.5s ease;
-  z-index: -1;
-}
-
-#about-section .btn-primary:hover::before {
-  left: 0;
-}
-
-#about-section .btn-primary:active {
-  transform: scale(1.1);
-  background-color: rgb(106, 68, 201);
-  border-color: rgb(106, 68, 201);
-}
-
-#about-section .btn-primary:active::before {
-  left: 0;
 }
 
 @keyframes fade-in-down {
@@ -251,6 +226,7 @@ body {
     opacity: 1;
   }
 }
+
 
 
   
@@ -585,71 +561,87 @@ body.loaded #main-content {
 
 
 
-/* Soft Skills Section */
 #soft-skills-section {
-  background-color: #f9f9f9; /* Subtle off-white background */
-  padding: 60px 20px;
+  background: linear-gradient(to bottom, white, whitesmoke); /* Light grey background */
+  padding: 50px 20px;
   border-radius: 10px;
-  font-family: 'Roboto', sans-serif;
+  margin-bottom: 40px;
+  font-family: Calibri, sans-serif;
 }
 
 #soft-skills-section h1 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #2c3e50; /* Professional dark color */
-  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #soft-skills-section p {
-  font-size: 16px;
   color: #555;
-  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
-  gap: 20px;
+#soft-skills-section .row {
+  margin-top: 30px;
 }
 
-.skill-card {
-  background-color: white; /* Clean card background */
-  border: 1px solid #ddd; /* Subtle border for separation */
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+#soft-skills-section .col-md-4 {
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skill-card:hover {
-  transform: translateY(-10px); /* Professional hover effect */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+#soft-skills-section .col-md-4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.skill-card i {
-  font-size: 40px;
-  color: #3498db; /* Vibrant blue for icons */
+#soft-skills-section i {
+  font-size: 50px;
+  color: #f39c12; /* Orange color for soft skills icons */
   margin-bottom: 15px;
 }
 
-.skill-card h4 {
-  font-size: 18px;
+#soft-skills-section h4 {
+  font-size: 20px;
   color: #34495e;
   margin-bottom: 10px;
 }
 
-.skill-card p {
+#soft-skills-section p {
   font-size: 14px;
   color: #777;
-  line-height: 1.6;
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
-  .skills-container {
-    grid-template-columns: 1fr; /* Single column on small screens */
+  #soft-skills-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between cards */
+  }
+
+  #soft-skills-section .col-md-4 {
+    flex: 0 0 calc(33.33% - 10px); /* 3 cards per row */
+    max-width: calc(33.33% - 10px);
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  #soft-skills-section i {
+    font-size: 30px; /* Smaller icons for mobile */
+    margin-bottom: 5px;
+  }
+
+  #soft-skills-section h4 {
+    font-size: 14px; /* Smaller titles for mobile */
+  }
+
+  #soft-skills-section p {
+    font-size: 12px; /* Smaller descriptions for mobile */
   }
 }
+
+
 
 
 
