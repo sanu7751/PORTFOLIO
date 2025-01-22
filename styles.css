@@ -142,7 +142,7 @@ body {
   .content {
     max-width: 100%; /* Content section takes full width on small screens */
     margin-bottom: 20px;
-    margin-top: 55px;
+    margin-top: 50px;
     order: -1; /* Move content before the image */
   }
 
