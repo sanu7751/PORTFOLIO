@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Biodata System</title>
+  <link rel="stylesheet" href="mixed.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Biodata System</h1>
+
+    <!-- Image Section -->
+    <div class="image-section">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2Nob29sJTIwbWFuYWdlbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Student Biodata System">
+    </div>
+
+    <!-- Description Section -->
+    <div class="content-section">
+      <p>The <strong>Student Biodata System</strong> allows students to manage and update their personal information and academic details. It provides a user-friendly interface to add biodata, including name, contact information, education details, and other relevant information.</p>
+    </div>
+
+    <!-- How it Works -->
+    <div class="content-section">
+      <h2>How the System Works:</h2>
+      <p>The system enables students to input their biodata through an intuitive interface. It stores the information securely in a relational database, making it easily accessible and editable for students and authorized personnel.</p>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="content-section">
+      <h2>Steps in the Biodata Process:</h2>
+      <ul>
+        <li>Student Registration: Students can register and create their profiles.</li>
+        <li>Information Entry: Students input their personal and academic details.</li>
+        <li>Data Management: Administrators can manage and update student biodata when needed.</li>
+        <li>Data Retrieval: Students and administrators can retrieve and edit stored biodata.</li>
+      </ul>
+    </div>
+
+    <!-- Features Section -->
+    <div class="content-section">
+      <h2>Key Features:</h2>
+      <ul>
+        <li>Easy-to-use interface for students to update and manage their biodata.</li>
+        <li>Secure data storage for sensitive student information.</li>
+        <li>Admin panel for managing student records and updates.</li>
+      </ul>
+    </div>
+
+    <!-- Back Button -->
+    <button class="btn-close" onclick="window.history.back()">×</button>
+
+  </div>
+  <script>
+    let lastScrollTop = 0;
+    const btnClose = document.querySelector('.btn-close');
+
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        btnClose.classList.remove('show');
+      } else {
+        // Scrolling up
+        btnClose.classList.add('show');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+  </script>
+
+</body>
+</html>
