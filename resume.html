@@ -1,214 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - [Your Name]</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Source Sans Pro', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body {
+      background-color: white;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
 
-        .c {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 50px;
-            background: #fff;
-            border-radius: 10px;
-            
-        }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #6549c9;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-        h1, h2, h3, h4 {
-            margin-bottom: 10px;
-        }
+    .header {
+      text-align: center;
+      padding: 20px 0;
+    }
 
-        h1 {
-            font-size: 2.5rem;
-            color: #4a90e2;
-            margin-bottom: 20px;
-        }
+    .header h1 {
+      font-size: 2rem;
+      color: rgb(71, 75, 181);
+      margin-bottom: 5px;
+      font-family: Georgia, serif;
+    }
 
-        h2 {
-            font-size: 1.75rem;
-            color: #333;
-            margin-bottom: 10px;
-        }
+    .header h2 {
+      font-size: 1.2rem;
+      color: #6549c9;
+      font-family: 'Courier New', monospace;
+      font-weight: 600;
+    }
 
-        .section {
-            margin-bottom: 30px;
-        }
+    .section {
+      margin-bottom: 30px;
+    }
 
-        .section-title {
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #4a90e2;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
+    .section-title {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      text-transform: uppercase;
+      border-bottom: 2px solid #6549c9;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
 
-        .section-content {
-            margin-top: 10px;
-        }
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .content-item {
-            margin-bottom: 15px;
-        }
+    .section ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
 
-        .content-item strong {
-            color: #4a90e2;
-        }
+    .section ul li::before {
+      content: '●';
+      position: absolute;
+      left: 0;
+      color: #6549c9;
+    }
 
-        .content-item span {
-            font-size: 1rem;
-            color: #666;
-        }
+    .btn-primary {
+        display: inline-block;
+        background-color: rgb(106, 148, 255);
+        color: white!important;
+        padding: 5px 15px; /* Reduced padding for smaller size */
+        font-size: 0.8rem; /* Smaller font size */
+        border: none;
+        border-radius: 5px;
+        text-decoration: none!important; /* Ensures no underline */
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    .btn-primary:hover {
+        background-color: rgb(139, 178, 255);
+        transform: scale(1.05);
+        text-decoration: none!important; /* Prevent underline on hover */
+    }
 
-        .contact-info div {
-            font-size: 1.1rem;
-            width: 45%;
-            margin-bottom: 10px;
-        }
+    .contact {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #4a90e2;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-align: center;
-        }
+    .contact a {
+      color: #6549c9;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .button:hover {
-            background-color: #357ab7;
-        }
+    .contact a:hover {
+      text-decoration: underline;
+    }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
+    @media (max-width: 768px) {
+      .container {
+        margin: 10px;
+        padding: 15px;
+      }
 
-            h1 {
-                font-size: 2rem;
-            }
+      .header h1 {
+        font-size: 1.5rem;
+      }
 
-            .section-title {
-                font-size: 1.2rem;
-            }
+      .header h2 {
+        font-size: 1rem;
+      }
 
-            .contact-info {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+      .btn-primary {
+        width: 50%;
+        font-size: 1rem;
+        padding: 10px;
+        text-decoration: none!important;
+      }
 
-            .contact-info div {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
+      .section-title {
+        font-size: 1rem;
+      }
+
+      ul li {
+        padding-left: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="c">
-        <!-- Header Section -->
-        <section class="section">
-            <h1>[Your Name]</h1>
-            <div class="contact-info">
-                <div><strong>Email:</strong> [Your Email]</div>
-                <div><strong>Phone:</strong> [Your Phone]</div>
-                <div><strong>LinkedIn:</strong> <a href="[Your LinkedIn URL]" target="_blank">[LinkedIn URL]</a></div>
-            </div>
-        </section>
-
-        <!-- Objective Section -->
-        <section class="section">
-            <h2 class="section-title">Objective</h2>
-            <div class="section-content">
-                <p>Motivated and detail-oriented web developer seeking to apply my skills in HTML, CSS, JavaScript, React, and backend development to contribute to creating engaging and user-friendly web applications.</p>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section">
-            <h2 class="section-title">Skills</h2>
-            <div class="section-content">
-                <div class="content-item">
-                    <strong>Languages:</strong> HTML, CSS, JavaScript, Python, Java
-                </div>
-                <div class="content-item">
-                    <strong>Frameworks/Technologies:</strong> React, Node.js, Express.js, Spring, Bootstrap, MongoDB
-                </div>
-                <div class="content-item">
-                    <strong>Tools:</strong> Git, Docker, Visual Studio Code, Postman
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="section-content">
-                <div class="content-item">
-                    <strong>[Your University]</strong> — [Degree] <span>(Graduation: [Year])</span>
-                </div>
-                <div class="content-item">
-                    Relevant Coursework: [List some relevant courses]
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section">
-            <h2 class="section-title">Experience</h2>
-            <div class="section-content">
-                <div class="content-item">
-                    <strong>[Company Name]</strong> — [Job Title] <span>([Start Date] - [End Date])</span>
-                    <p>Responsibilities: [Describe what you did in the role]</p>
-                </div>
-                <div class="content-item">
-                    <strong>[Company Name]</strong> — [Job Title] <span>([Start Date] - [End Date])</span>
-                    <p>Responsibilities: [Describe what you did in the role]</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="section">
-            <h2 class="section-title">Projects</h2>
-            <div class="section-content">
-                <div class="content-item">
-                    <strong>[Project Name]</strong> — <span>Technologies used: [React, Node.js, etc.]</span>
-                    <p>Description: [A brief summary of the project and its impact]</p>
-                    <a href="[GitHub Repo Link]" target="_blank" class="button">View Project</a>
-                </div>
-                <div class="content-item">
-                    <strong>[Project Name]</strong> — <span>Technologies used: [React, MongoDB, etc.]</span>
-                    <p>Description: [A brief summary of the project and its impact]</p>
-                    <a href="[GitHub Repo Link]" target="_blank" class="button">View Project</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <section class="section">
-            <a href="[Resume PDF Link]" class="button">Download Resume</a>
-        </section>
+  <div class="container">
+    <div class="header">
+      <h1>Sanu</h1>
+      <h2>Web Developer | Machine Learning Enthusiast</h2>
     </div>
+    <div class="section">
+      <h3 class="section-title">About Me</h3>
+      <p>A passionate web developer with experience in creating innovative and user-friendly web applications. Skilled in both frontend and backend technologies, with a strong foundation in machine learning.</p>
+    </div>
+    <div class="section">
+      <h3 class="section-title">Skills</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript, Bootstrap</li>
+        <li>React, Node.js, Express.js</li>
+        <li>Python, PHP, Java</li>
+        <li>Data Analysis & Visualization</li>
+        <li>Machine Learning</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3 class="section-title">Education</h3>
+      <p><strong>Bachelor's in Computer Science</strong> <br> XYZ University, 2025</p>
+    </div>
+    <div class="section">
+      <h3 class="section-title">Projects</h3>
+      <ul>
+        <li>Student Management System</li>
+        <li>Voice Recognition System</li>
+        <li>House Price Prediction</li>
+        <li>Financial Management System</li>
+      </ul>
+    </div>
+    <div class="contact">
+      <p>Contact me at <a href="mailto:sanu@example.com">sanu@example.com</a> or visit my <a href="https://portfolio.example.com">Portfolio</a>.</p>
+      <a href="https://linkedin.com/in/sanu" class="btn-primary">Connect on LinkedIn</a>
+    </div>
+  </div>
 </body>
 </html>
