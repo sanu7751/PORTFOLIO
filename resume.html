@@ -5,124 +5,228 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - Sanu</title>
   <style>
-    /* Global Styles */
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset and basic styles */
+    * {
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
       color: #333;
       line-height: 1.6;
     }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    h1, h2, h3 {
+      color: #34495e;
     }
-    h1, h2 {
-      color: #4a75e0;
-      margin-bottom: 10px;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-    }
+
     h2 {
-      font-size: 1.8rem;
-      border-bottom: 2px solid #6a94ff;
+      border-bottom: 2px solid #3498db;
       padding-bottom: 5px;
+      margin-bottom: 20px;
     }
-    p {
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Cross Mark (X) Button */
+    .btn-close {
+      position: fixed;
+      top: 20px;
+      right: 50%;
+      background-color: transparent;
+      color: #e74c3c;
+      font-size: 30px;
+      border: none;
+      cursor: pointer;
+      display: none; /* Initially hidden */
+      transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+      z-index: 999;
+    }
+
+    .btn-close.show {
+      display: block;
+      transform: translateY(0); /* Make it visible when scrolled up */
+      opacity: 1;
+      top: 20px; /* Maintain position at top */
+      right: 50%;
+    }
+
+    .btn-close:hover {
+      color: #c0392b;
+    }
+
+    /* Button Styles */
+    .btn-primary {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
       margin: 10px 0;
     }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin: 5px 0;
-    }
 
-    /* Action Button Styles */
-    .btn-primary {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 5px;
-      font-size: 1rem;
-      font-weight: bold;
-      color: white;
-      background: linear-gradient(135deg, #6a94ff, #4a75e0);
-      border: none;
-      border-radius: 25px;
-      text-decoration: none; /* Remove underline */
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease-in-out;
-      cursor: pointer;
-    }
     .btn-primary:hover {
-      background: linear-gradient(135deg, #4a75e0, #6a94ff);
-      transform: scale(1.1); /* Slightly enlarge the button */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add a deeper shadow */
+      background-color: #2980b9;
     }
 
-    /* Responsive Design */
-    @media (max-width: 600px) {
+    /* Content Sections */
+    .content-section {
+      margin-bottom: 30px;
+    }
+
+    .content-section ul {
+      list-style-type: none;
+    }
+
+    .content-section li {
+      margin-bottom: 10px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
       h1 {
         font-size: 2rem;
       }
-      h2 {
-        font-size: 1.5rem;
+
+      .btn-primary {
+        padding: 8px 15px;
+      }
+
+      .content-section ul {
+        padding-left: 20px;
+      }
+
+      .content-section li {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Extra Small Devices (Mobile Portrait) */
+    @media (max-width: 480px) {
+      .container {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .btn-primary {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+      }
+
+      .content-section li {
+        font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
+
+  <!-- Cross Button -->
+  <button class="btn-close" onclick="window.history.back()">×</button>
+
+  <!-- Resume Content -->
   <div class="container">
-    <h1>Sanu</h1>
-    <h2>Contact Information</h2>
-    <p><strong>Email:</strong> sanu@example.com</p>
-    <p><strong>Phone:</strong> +91 12345 67890</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sanu" class="btn-primary">Connect</a></p>
+    <h1>Sanu's Resume</h1>
 
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Bachelor of Technology:</strong> XYZ University, 2023</li>
-      <li><strong>Intermediate:</strong> ABC School, 2019</li>
-    </ul>
+    <div class="content-section">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> sanu@example.com</p>
+      <p><strong>Phone:</strong> +91 12345 67890</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sanu" target="_blank">Visit my LinkedIn Profile</a></p>
+    </div>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Web Development: HTML, CSS, JavaScript, React</li>
-      <li>Backend Development: Node.js, Express.js, Python, Java</li>
-      <li>Database Management: SQL, MongoDB</li>
-      <li>Machine Learning: NumPy, Pandas, Ridge Regression</li>
-    </ul>
+    <div class="content-section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor of Technology:</strong> XYZ University, 2023</li>
+        <li><strong>Intermediate:</strong> ABC School, 2019</li>
+      </ul>
+    </div>
 
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>House Price Prediction:</strong> A machine learning model achieving 85% accuracy.</li>
-      <li><strong>AspireJourney:</strong> A career guidance website built with React.</li>
-      <li><strong>Financial Management System:</strong> A Java-based system to manage clients and portfolios.</li>
-    </ul>
+    <div class="content-section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Web Development: HTML, CSS, JavaScript, React</li>
+        <li>Backend Development: Node.js, Express.js, Python, Java</li>
+        <li>Database Management: SQL, MongoDB</li>
+        <li>Machine Learning: NumPy, Pandas, Ridge Regression</li>
+      </ul>
+    </div>
 
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Part-time Promoter:</strong> Forever (2024-Present)</li>
-      <li><strong>Intern:</strong> Yhills Online - Cybersecurity (2025)</li>
-    </ul>
+    <div class="content-section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>House Price Prediction:</strong> A machine learning model achieving 85% accuracy.</li>
+        <li><strong>AspireJourney:</strong> A career guidance website built with React.</li>
+        <li><strong>Financial Management System:</strong> A Java-based system to manage clients and portfolios.</li>
+      </ul>
+    </div>
 
-    <h2>Achievements</h2>
-    <ul>
-      <li>Hackathon Leader: Accenture Innovation Challenge, ABC Hackathon</li>
-      <li>Volunteer: Triranga Yubaka Sangh</li>
-    </ul>
+    <div class="content-section">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Part-time Promoter:</strong> Forever (2024-Present)</li>
+        <li><strong>Intern:</strong> Yhills Online - Cybersecurity (2025)</li>
+      </ul>
+    </div>
 
-    <h2>Actions</h2>
-    <a href="mailto:sanu@example.com" class="btn-primary">Email Me</a>
-    <a href="tel:+911234567890" class="btn-primary">Call Me</a>
+    <div class="content-section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Hackathon Leader: Accenture Innovation Challenge, ABC Hackathon</li>
+        <li>Volunteer: Triranga Yubaka Sangh</li>
+      </ul>
+    </div>
+
   </div>
+
+  <script>
+    let lastScrollTop = 0;
+    const btnClose = document.querySelector('.btn-close');
+
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        btnClose.classList.remove('show');
+      } else {
+        // Scrolling up
+        btnClose.classList.add('show');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+  </script>
+
 </body>
 </html>
