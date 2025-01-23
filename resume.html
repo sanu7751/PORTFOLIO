@@ -48,15 +48,20 @@
     .btn-close {
       position: fixed;
       top: 20px;
-      right: 20px;
-      background-color: transparent;
-      color: #e74c3c;
+      right: 5%;
+      background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
+      color: #fff;
       font-size: 30px;
       border: none;
       cursor: pointer;
       display: none; /* Initially hidden */
-      transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+      width: 40px; /* Circular size */
+      height: 40px; /* Circular size */
+      border-radius: 50%; /* Circle shape */
+      text-align: center;
+      line-height: 40px; /* Center the "X" */
       z-index: 999;
+      transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
     }
 
     .btn-close.show {
@@ -67,7 +72,7 @@
     }
 
     .btn-close:hover {
-      color: #c0392b;
+      background-color: rgba(0, 0, 0, 0.7); /* Darker transparent background on hover */
     }
 
     /* Button Styles */
@@ -123,6 +128,12 @@
 
       .content-section li {
         font-size: 0.95rem;
+      }
+
+      /* Position the close button in the center for mobile */
+      .btn-close {
+        right: 50%;
+        transform: translateX(50%);
       }
     }
 
