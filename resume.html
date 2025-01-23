@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - [Your Name]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+
+        .c {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px;
+            background: #fff;
+            border-radius: 10px;
+            
+        }
+
+        h1, h2, h3, h4 {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #4a90e2;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            margin-top: 10px;
+        }
+
+        .content-item {
+            margin-bottom: 15px;
+        }
+
+        .content-item strong {
+            color: #4a90e2;
+        }
+
+        .content-item span {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .contact-info div {
+            font-size: 1.1rem;
+            width: 45%;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4a90e2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #357ab7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-info div {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="c">
+        <!-- Header Section -->
+        <section class="section">
+            <h1>[Your Name]</h1>
+            <div class="contact-info">
+                <div><strong>Email:</strong> [Your Email]</div>
+                <div><strong>Phone:</strong> [Your Phone]</div>
+                <div><strong>LinkedIn:</strong> <a href="[Your LinkedIn URL]" target="_blank">[LinkedIn URL]</a></div>
+            </div>
+        </section>
+
+        <!-- Objective Section -->
+        <section class="section">
+            <h2 class="section-title">Objective</h2>
+            <div class="section-content">
+                <p>Motivated and detail-oriented web developer seeking to apply my skills in HTML, CSS, JavaScript, React, and backend development to contribute to creating engaging and user-friendly web applications.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="section-content">
+                <div class="content-item">
+                    <strong>Languages:</strong> HTML, CSS, JavaScript, Python, Java
+                </div>
+                <div class="content-item">
+                    <strong>Frameworks/Technologies:</strong> React, Node.js, Express.js, Spring, Bootstrap, MongoDB
+                </div>
+                <div class="content-item">
+                    <strong>Tools:</strong> Git, Docker, Visual Studio Code, Postman
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="section-content">
+                <div class="content-item">
+                    <strong>[Your University]</strong> — [Degree] <span>(Graduation: [Year])</span>
+                </div>
+                <div class="content-item">
+                    Relevant Coursework: [List some relevant courses]
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="section-content">
+                <div class="content-item">
+                    <strong>[Company Name]</strong> — [Job Title] <span>([Start Date] - [End Date])</span>
+                    <p>Responsibilities: [Describe what you did in the role]</p>
+                </div>
+                <div class="content-item">
+                    <strong>[Company Name]</strong> — [Job Title] <span>([Start Date] - [End Date])</span>
+                    <p>Responsibilities: [Describe what you did in the role]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-content">
+                <div class="content-item">
+                    <strong>[Project Name]</strong> — <span>Technologies used: [React, Node.js, etc.]</span>
+                    <p>Description: [A brief summary of the project and its impact]</p>
+                    <a href="[GitHub Repo Link]" target="_blank" class="button">View Project</a>
+                </div>
+                <div class="content-item">
+                    <strong>[Project Name]</strong> — <span>Technologies used: [React, MongoDB, etc.]</span>
+                    <p>Description: [A brief summary of the project and its impact]</p>
+                    <a href="[GitHub Repo Link]" target="_blank" class="button">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="section">
+            <a href="[Resume PDF Link]" class="button">Download Resume</a>
+        </section>
+    </div>
+</body>
+</html>
