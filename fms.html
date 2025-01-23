@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Management System</title>
+  <link rel="stylesheet" href="mixed.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Financial Management System</h1>
+
+    <!-- Image Section -->
+    <div class="image-section">
+      <img src="https://img.freepik.com/premium-photo/concept-financial-planning-with-accessories-close-up_185193-24535.jpg?w=996" alt="Financial Management System">
+    </div>
+
+    <!-- Description Section -->
+    <div class="content-section">
+      <p>The <strong>Financial Management System</strong> is a Java-based system designed to manage finances, track clients, and their portfolios. It provides a comprehensive interface for financial advisors to add and manage client information, track portfolios, and analyze financial data.</p>
+    </div>
+
+    <!-- How it Works -->
+    <div class="content-section">
+      <h2>How the System Works:</h2>
+      <p>The system allows financial advisors to add and update clients' information, track their portfolios, and ensure the accuracy of financial transactions. The backend is powered by Java, and data is stored in a relational database.</p>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="content-section">
+      <h2>Steps in the System Process:</h2>
+      <ul>
+        <li>Client Registration: Financial advisors can register new clients into the system.</li>
+        <li>Portfolio Management: Advisors can add, update, or remove securities within client portfolios.</li>
+        <li>Data Security: Sensitive data is protected with secure encryption methods.</li>
+        <li>Client Tracking: Keep track of financial goals and client performance.</li>
+      </ul>
+    </div>
+
+    <!-- Features Section -->
+    <div class="content-section">
+      <h2>Key Features:</h2>
+      <ul>
+        <li>Secure client data management.</li>
+        <li>Real-time portfolio tracking and updates.</li>
+        <li>Comprehensive financial reporting and analytics.</li>
+      </ul>
+    </div>
+
+    <!-- Back Button -->
+    <button class="btn-close" onclick="window.history.back()">×</button>
+  </div>
+  <script>
+    let lastScrollTop = 0;
+    const btnClose = document.querySelector('.btn-close');
+
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        btnClose.classList.remove('show');
+      } else {
+        // Scrolling up
+        btnClose.classList.add('show');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+  </script>
+</body>
+</html>
