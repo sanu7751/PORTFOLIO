@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Price Prediction System</title>
+  <link rel="stylesheet" href="mixed.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>House Price Prediction System</h1>
+
+    <!-- Image Section -->
+    <div class="image-section">
+      <img src="https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&w=600" alt="House Price Prediction">
+    </div>
+
+    <!-- Description Section -->
+    <div class="content-section">
+      <p>The <strong>House Price Prediction System</strong> uses machine learning to predict house prices based on factors such as area, number of bedrooms, square footage, and bathrooms. The system employs a regression model to make accurate predictions that help buyers, sellers, and real estate agents.</p>
+    </div>
+
+    <!-- How it Works -->
+    <div class="content-section">
+      <h2>How the System Works:</h2>
+      <p>The model uses data on house features (like area, number of bedrooms, etc.) to predict the price. It is trained using Ridge Regression, ensuring that the model avoids overfitting and achieves higher accuracy.</p>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="content-section">
+      <h2>Steps in the Prediction Process:</h2>
+      <ul>
+        <li>Data Collection: Gathering historical data of house prices and features.</li>
+        <li>Data Preprocessing: Cleaning the data and scaling the features for uniformity.</li>
+        <li>Model Training: Using Ridge Regression to train the model with the data.</li>
+        <li>Prediction: The model predicts house prices based on input values like area, bedrooms, and bathrooms.</li>
+      </ul>
+    </div>
+
+    <!-- Features Section -->
+    <div class="content-section">
+      <h2>Key Features:</h2>
+      <ul>
+        <li>High accuracy of predictions (85% accuracy achieved).</li>
+        <li>Real-time prediction based on user input.</li>
+        <li>Easy-to-use interface for both developers and users.</li>
+      </ul>
+    </div>
+
+    <!-- Back Button -->
+    <button class="btn-close" onclick="window.history.back()">×</button>
+
+  </div>
+  <script>
+    let lastScrollTop = 0;
+    const btnClose = document.querySelector('.btn-close');
+
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        btnClose.classList.remove('show');
+      } else {
+        // Scrolling up
+        btnClose.classList.add('show');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+  </script>
+</body>
+</html>
