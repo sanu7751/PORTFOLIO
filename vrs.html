@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Recognition System</title>
+  <link rel="stylesheet" href="mixed.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Voice Recognition System</h1>
+
+    <!-- Image Section -->
+    <div class="image-section">
+      <img src="https://media.istockphoto.com/id/1923678021/photo/voice-recording-man-touching-microphone-icon-on-smart-phone-mobile-application-record-sound.jpg?s=612x612&w=0&k=20&c=L7AAzCB5XOIC7T0tibeLFs3813yUzUNmU3kdUoDcSMU=" alt="Voice Recognition System">
+    </div>
+
+    <!-- Description Section -->
+    <div class="content-section">
+      <p>The <strong>Voice Recognition System</strong> uses speech recognition algorithms to identify and process voice commands. This system is built to recognize voice inputs and convert them into actions or responses, making it useful for hands-free control of various devices.</p>
+    </div>
+
+    <!-- How it Works -->
+    <div class="content-section">
+      <h2>How the System Works:</h2>
+      <p>The system captures audio inputs from users, processes them using speech recognition algorithms, and identifies specific commands or phrases. Once recognized, the system executes the corresponding action or response.</p>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="content-section">
+      <h2>Steps in the Recognition Process:</h2>
+      <ul>
+        <li>Voice Input: The system captures audio input through a microphone.</li>
+        <li>Signal Processing: The audio is converted into a text format using speech recognition algorithms.</li>
+        <li>Command Matching: The system compares the recognized text with predefined commands.</li>
+        <li>Execution: The system performs the action based on the recognized voice command.</li>
+      </ul>
+    </div>
+
+    <!-- Features Section -->
+    <div class="content-section">
+      <h2>Key Features:</h2>
+      <ul>
+        <li>Speech-to-text conversion for voice inputs.</li>
+        <li>Real-time voice recognition for seamless control.</li>
+        <li>Highly accurate command recognition for various actions.</li>
+      </ul>
+    </div>
+
+    <!-- Back Button -->
+    <button class="btn-close" onclick="window.history.back()">×</button>
+  </div>
+  <script>
+    let lastScrollTop = 0;
+    const btnClose = document.querySelector('.btn-close');
+
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        btnClose.classList.remove('show');
+      } else {
+        // Scrolling up
+        btnClose.classList.add('show');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+  </script>
+</body>
+</html>
