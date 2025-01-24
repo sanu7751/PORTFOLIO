@@ -764,6 +764,7 @@ body {
 .experience-section {
   padding: 40px 0;
   background: linear-gradient(to bottom, white, whitesmoke);
+  overflow-x: hidden;
 }
 
 .experience-section .section-title {
@@ -882,88 +883,15 @@ body {
 
 
 
-.hobbies-section {
-  padding: 40px 20px;
-  background: linear-gradient(to bottom, whitesmoke, white);
-}
-
-.hobbies-section .section-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.hobbies-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-  gap: 20px; /* Adjust the space between items */
-  justify-items: center;
-}
-
-.hobby-card {
-  width: 100%;
-  max-width: 250px; /* Ensures it doesn't stretch too wide */
-  height: 250px;
-  perspective: 1000px;
-}
-
-.card-inner {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-.hobby-card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.card-front {
-  background-color: #fff;
-  color: #333;
-  font-size: 20px;
-}
-
-.card-back {
-  background-color: rgb(206, 207, 255);
-  color: #262626;
-  font-size: 16px;
-  transform: rotateY(180deg);
-}
-
-/* Mobile responsiveness */
-@media (max-width: 1024px) {
-  .hobbies-cards {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
-  }
-}
-
-@media (max-width: 768px) {
-  .hobbies-cards {
-    grid-template-columns: repeat(1, 1fr); /* 1 item per row on mobile */
-  }
-}
-
 
 
 
 
 .certifications-section {
   padding: 40px 20px;
-  background: linear-gradient(to bottom, white, whitesmoke);}
+  background: linear-gradient(to bottom, white, whitesmoke);
+  overflow-x: hidden;
+}
 
 .certifications-section .section-title {
   text-align: center;
@@ -1007,6 +935,7 @@ body {
   font-size: 18px;
   color: #333;
   margin-bottom: 10px;
+  overflow-y: hidden;
 }
 
 /* Final Message Section */
