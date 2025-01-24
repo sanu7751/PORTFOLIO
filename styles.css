@@ -941,7 +941,7 @@ body {
 /* Final Message Section */
 .final-message-section {
   padding: 40px 20px;
-  background-color: #4b26d2;
+  background-color: rgb(73, 76, 161);
   text-align: center;
 }
 
