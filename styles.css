@@ -117,6 +117,7 @@ body {
 
 .content {
   max-width: 50%;
+  margin-top: 100px;;
 }
 
 .image {
@@ -128,6 +129,7 @@ body {
   height: auto;
   border-radius: 300px 300px 0 0; /* Curve only the top corners */
   overflow: hidden;
+  
 }
 
 @media (max-width: 768px) {
@@ -195,6 +197,7 @@ body {
   overflow: hidden;
   transition: color 0.3s ease, transform 0.3s ease;
   z-index: 1;
+  margin-top: 20px;
 }
 
 #about-section .btn-primary:hover {
@@ -960,7 +963,7 @@ body {
 
 
 #developer-section {
-  padding: 0px 0px;
+  padding: 20px 20px;
   text-align: start;
   margin-left: 50px;
   font-size: 50px;
@@ -968,12 +971,12 @@ body {
   animation: fade-in 4s ease-in-out;
 }
 
-#developer-section h2 {
-  font-size: 2rem;
+#developer-section h4 {
+  font-size: 1.5rem;
   color: rgb(0, 0, 0);
   font-family: 'Poppins', sans-serif;
   display: inline-block;
-  line-height: 2; /* Increased line-height for vertical spacing */
+  line-height: 1; /* Increased line-height for vertical spacing */
   margin-left: 300px;
   margin-bottom: 0; /* Ensure no extra space at the bottom */
   
@@ -987,16 +990,14 @@ body {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
   font-family: 'Poppins', sans-serif;
-  line-height: 2; /* Matches the line-height of h1 */
+  line-height: 1; /* Matches the line-height of h1 */
   padding: 2px 5px; /* Add vertical and horizontal padding to prevent clipping */
   vertical-align: middle; /* Aligns the text with "I am" */
   font-weight: bold;
 }
 
 @media (max-width: 768px) {
-  #developer-section h1 {
+  #developer-section h4 {
     margin-left: 90px;
-   
-    
   }
 }
