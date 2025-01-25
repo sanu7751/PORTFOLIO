@@ -72,22 +72,25 @@
 
 
 
-<section id="about-section" >
+<section id="about-section" id="developer-section">
   <div class="container s" data-aos="fade-up">
     <div class="content">
       <h1>Hello!</h1>
+      
       <h4> I Am Sanu, Welcome to My Portfolio</h4>
-      <p>
-        I am passionate about web development and constantly learning new technologies to create stunning, user-friendly websites. Let's explore my work and connect!
-      </p>
+      <h2>
+        I'm <span id="dynamic-profession"></span>
+      </h2>
       <a href="resume.html" class="btn btn-primary"><i class="fa fa-file-pdf"></i> View My Resume
       </a>
     </div>
     <div class="image">
-      <img src="sanu1.png" alt="Sanu">
+      <img src="sanu.png" alt="Sanu">
     </div>
   </div>
 </section>
+
+
 
 
 
@@ -395,7 +398,10 @@
 
   
   <script>
-     AOS.init();
+     AOS.init({
+          duration: 1000,
+          once: false,
+        });
   </script>
 
 
@@ -506,7 +512,38 @@ function scrollToTop() {
 
 
 
-
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const professions = ["a Developer", "a UX/UI Designer", "an App Developer"];
+      const typingElement = document.getElementById("dynamic-profession");
+      let index = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+  
+      const typeEffect = () => {
+        const currentText = professions[index];
+        if (isDeleting) {
+          charIndex--;
+        } else {
+          charIndex++;
+        }
+  
+        typingElement.textContent = currentText.substring(0, charIndex);
+  
+        if (!isDeleting && charIndex === currentText.length) {
+          setTimeout(() => (isDeleting = true), 1000); // Pause before deleting
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          index = (index + 1) % professions.length;
+        }
+  
+        setTimeout(typeEffect, isDeleting ? 50 : 150); // Typing and deleting speed
+      };
+  
+      typeEffect();
+    });
+  </script>
+  
 
 
 
