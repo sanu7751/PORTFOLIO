@@ -3,71 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Financial Management System</title>
-  <link rel="stylesheet" href="mixed.css">
+  <title>Sanu's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #f5f7fa, rgb(122, 126, 255));
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #ffffff;
+    }
+    .navbar-brand {
+      color: #6549c9 !important;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .navbar .nav-link {
+      color: #6549c9 !important;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(to right, #6549c9, rgb(122, 126, 255));
+      color: #ffffff;
+      padding: 100px 0;
+      text-align: center;
+      margin-top: 62px;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+
+    /* Section */
+    .section {
+      padding: 80px 20px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Features */
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+    .features-list li i {
+      color: #150059;
+      margin-right: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgb(122, 126, 255);
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #6549c9;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sanu's Portfolio</a>
+    </div>
+</nav>
 
+<!-- Hero Section -->
+<section class="hero-section">
   <div class="container">
-    <h1>Financial Management System</h1>
-
-    <!-- Image Section -->
-    <div class="image-section">
-      <img src="https://img.freepik.com/premium-photo/concept-financial-planning-with-accessories-close-up_185193-24535.jpg?w=996" alt="Financial Management System">
-    </div>
-
-    <!-- Description Section -->
-    <div class="content-section">
-      <p>The <strong>Financial Management System</strong> is a Java-based system designed to manage finances, track clients, and their portfolios. It provides a comprehensive interface for financial advisors to add and manage client information, track portfolios, and analyze financial data.</p>
-    </div>
-
-    <!-- How it Works -->
-    <div class="content-section">
-      <h2>How the System Works:</h2>
-      <p>The system allows financial advisors to add and update clients' information, track their portfolios, and ensure the accuracy of financial transactions. The backend is powered by Java, and data is stored in a relational database.</p>
-    </div>
-
-    <!-- Steps Section -->
-    <div class="content-section">
-      <h2>Steps in the System Process:</h2>
-      <ul>
-        <li>Client Registration: Financial advisors can register new clients into the system.</li>
-        <li>Portfolio Management: Advisors can add, update, or remove securities within client portfolios.</li>
-        <li>Data Security: Sensitive data is protected with secure encryption methods.</li>
-        <li>Client Tracking: Keep track of financial goals and client performance.</li>
-      </ul>
-    </div>
-
-    <!-- Features Section -->
-    <div class="content-section">
-      <h2>Key Features:</h2>
-      <ul>
-        <li>Secure client data management.</li>
-        <li>Real-time portfolio tracking and updates.</li>
-        <li>Comprehensive financial reporting and analytics.</li>
-      </ul>
-    </div>
-
-    <!-- Back Button -->
-    <button class="btn-close" onclick="window.history.back()">×</button>
+    <h1>Welcome to My Financial Management System</h1>
+    <p>Streamlining Client Portfolio Management with Secure Data Transfers</p>
   </div>
-  <script>
-    let lastScrollTop = 0;
-    const btnClose = document.querySelector('.btn-close');
+</section>
 
-    window.addEventListener('scroll', function() {
-      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About the Financial Management System</h2>
+    <p>This project is a secure and efficient Financial Management System designed to help financial advisors manage client data and portfolios. The system offers seamless data transfer capabilities and ensures data privacy and accuracy.</p>
+    <img src="https://img.freepik.com/premium-photo/concept-financial-planning-with-accessories-close-up_185193-24535.jpg?w=996.jpg" alt="Financial Management System" class="img-fluid" />
+  </div>
+</section>
 
-      if (currentScroll > lastScrollTop) {
-        // Scrolling down
-        btnClose.classList.remove('show');
-      } else {
-        // Scrolling up
-        btnClose.classList.add('show');
-      }
+<!-- Features Section -->
+<section id="features" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Key Features</h2>
+    <ul class="features-list">
+      <li><i class="fas fa-check-circle"></i> Manage client data, including personal details and investment portfolios.</li>
+      <li><i class="fas fa-check-circle"></i> Secure transfer of sensitive financial information.</li>
+      <li><i class="fas fa-check-circle"></i> Visualize portfolio performance through charts and reports.</li>
+      <li><i class="fas fa-check-circle"></i> Real-time updates for market and portfolio values.</li>
+    </ul>
+  </div>
+</section>
 
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-    });
-  </script>
+<!-- Technologies Section -->
+<section id="technologies" class="section">
+  <div class="container">
+    <h2 class="section-title">Technologies Used</h2>
+    <p>This project utilizes the following technologies:</p>
+    <ul class="features-list">
+      <li><i class="fas fa-database"></i> Spring Boot for backend services.</li>
+      <li><i class="fas fa-code"></i> React.js for an interactive frontend interface.</li>
+      <li><i class="fas fa-lock"></i> SSL/TLS for encrypted data transfers.</li>
+      <li><i class="fas fa-chart-bar"></i> Chart.js for visualizing financial data.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Sanu's Portfolio. All Rights Reserved. | <a href="#contact">Contact Me</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
