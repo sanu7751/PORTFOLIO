@@ -187,10 +187,11 @@ body {
   animation: fade-in 4s ease-in-out;
 }
 #about-section h5 {
-  
+  font-family: 'Times New Roman', serif;
   font-size: 2rem;
   color: #333;
   animation: fade-in 4s ease-in-out;
+  font-weight: bold;
 }
 #about-section .btn-primary {
   background-color: rgb(49, 51, 125);
@@ -978,15 +979,10 @@ body {
   animation: fade-in 4s ease-in-out;
 }
 
-#developer-section h4 {
-  font-size: 1.5rem;
-  color: rgb(0, 0, 0);
-  font-family: 'Poppins', sans-serif;
+#developer-section h5 {
   display: inline-block;
   line-height: 1; /* Increased line-height for vertical spacing */
   margin-left: 300px;
-  margin-bottom: 0; /* Ensure no extra space at the bottom */
-  
 }
 
 #dynamic-profession {
@@ -994,17 +990,12 @@ body {
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   color: rgb(0, 0, 0);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Times New Roman', serif;
   line-height: 1; /* Matches the line-height of h1 */
   padding: 2px 5px; /* Add vertical and horizontal padding to prevent clipping */
   vertical-align: middle; /* Aligns the text with "I am" */
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  #developer-section h4 {
-    margin-left: 90px;
-  }
-}
