@@ -53,8 +53,7 @@ body {
 
 
 
-.first-navbar 
-{
+.first-navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -107,7 +106,7 @@ body {
   background-color: white;
   text-align: start;
   font-family: 'Roboto', sans-serif;
-  margin-top: 90px;
+  margin-top: 150px;
 }
 
 .s {
@@ -121,13 +120,14 @@ body {
 }
 
 .image {
-  max-width: 45%; /* Image section width */
+  max-width: 25%; /* Further reduced image section width */
 }
 
 #about-section img {
   width: 100%; /* Make the image take the full container width */
   height: auto;
-  border-radius: 8px;
+  border-radius: 300px 300px 0 0; /* Curve only the top corners */
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -143,12 +143,12 @@ body {
   .content {
     max-width: 100%; /* Content section takes full width on small screens */
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     order: -1; /* Move content before the image */
   }
 
   .image {
-    max-width: 100%; /* Image section takes full width */
+    max-width: 70%; /* Smaller image section on small screens */
     margin-bottom: 20px; /* Add spacing below the image */
     margin-top: 0; /* Remove unnecessary top margin */
   }
@@ -168,8 +168,6 @@ body {
   }
 }
 
-
-
 #about-section h1 {
   font-size: 5rem;
   color: rgb(71, 75, 181);
@@ -186,17 +184,6 @@ body {
   color: #333;
   animation: fade-in 4s ease-in-out;
 }
-
-#about-section p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  animation: fade-in 4s ease-in-out;
-  font-family: 'Courier New', monospace;
-  font-weight: 600;
-}
-
 #about-section .btn-primary {
   background-color: rgb(49, 51, 125);
   color: white;
@@ -261,6 +248,7 @@ body {
     opacity: 1;
   }
 }
+
 
 
 
@@ -970,3 +958,45 @@ body {
 }
 
 
+
+#developer-section {
+  padding: 0px 0px;
+  text-align: start;
+  margin-left: 50px;
+  font-size: 50px;
+  margin-top: 5px;
+  animation: fade-in 4s ease-in-out;
+}
+
+#developer-section h2 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  line-height: 2; /* Increased line-height for vertical spacing */
+  margin-left: 300px;
+  margin-bottom: 0; /* Ensure no extra space at the bottom */
+  
+}
+
+#dynamic-profession {
+  display: inline-block;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  line-height: 2; /* Matches the line-height of h1 */
+  padding: 2px 5px; /* Add vertical and horizontal padding to prevent clipping */
+  vertical-align: middle; /* Aligns the text with "I am" */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #developer-section h1 {
+    margin-left: 90px;
+   
+    
+  }
+}
