@@ -186,6 +186,12 @@ body {
   color: #333;
   animation: fade-in 4s ease-in-out;
 }
+#about-section h5 {
+  
+  font-size: 2rem;
+  color: #333;
+  animation: fade-in 4s ease-in-out;
+}
 #about-section .btn-primary {
   background-color: rgb(49, 51, 125);
   color: white;
@@ -198,6 +204,7 @@ body {
   transition: color 0.3s ease, transform 0.3s ease;
   z-index: 1;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #about-section .btn-primary:hover {
