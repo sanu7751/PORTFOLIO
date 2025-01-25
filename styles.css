@@ -990,7 +990,7 @@ body {
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   color: rgb(0, 0, 0);
   font-family: 'Times New Roman', serif;
   line-height: 1; /* Matches the line-height of h1 */
