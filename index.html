@@ -416,20 +416,20 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
     <script type="text/javascript">
-  (function() {
-    emailjs.init("Qu1fiyQbm7Hptw6g7"); // Your EmailJS user ID
-  })();
-
   document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    emailjs.sendForm("service_rp8apkh", "template_snhnrid", this)
-      .then(function(response) {
-        alert("Message sent successfully!");
-      }, function(error) {
-        alert("Error sending message. Please try again later.");
-      });
-  });
+  event.preventDefault();
+  document.body.style.overflow = 'hidden'; // Disable scroll temporarily
+
+  emailjs.sendForm("service_rp8apkh", "template_snhnrid", this)
+    .then(function(response) {
+      alert("Message sent successfully!");
+      document.body.style.overflow = ''; // Re-enable scrolling after sending the message
+    }, function(error) {
+      alert("Error sending message. Please try again later.");
+      document.body.style.overflow = ''; // Re-enable scrolling after error
+    });
+});
+
 </script>
   
 
