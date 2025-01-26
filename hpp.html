@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sanu's Portfolio</title>
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Welcome to Sanu's professional portfolio showcasing work on Machine Learning and Web Development projects.">
+  <meta name="keywords" content="Portfolio, Machine Learning, Web Development, Sanu, Ridge Regression, House Price Prediction, Python, Flask">
+  <meta name="author" content="Sanu">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,8 +20,6 @@
       margin: 0;
       padding: 0;
     }
-
-    /* Navbar */
     .navbar {
       background-color: rgb(255, 255, 255);
     }
@@ -30,14 +32,12 @@
       color: #100043 !important;
       font-weight: 500;
     }
-
-    /* Hero Section */
     .hero-section {
       background: linear-gradient(to right, #e3dcff, rgb(122, 126, 255));
       color: #100043;
       padding: 100px 0;
       text-align: center;
-      margin-top:62px;
+      margin-top: 62px;
     }
     .hero-section h1 {
       font-size: 3rem;
@@ -47,8 +47,6 @@
       font-size: 1.2rem;
       margin-top: 15px;
     }
-
-    /* Section */
     .section {
       padding: 80px 20px;
     }
@@ -58,8 +56,6 @@
       text-align: center;
       margin-bottom: 40px;
     }
-
-    /* Features */
     .features-list {
       list-style: none;
       padding: 0;
@@ -72,8 +68,6 @@
       color: #150059;
       margin-right: 10px;
     }
-
-    /* Footer */
     footer {
       background-color: #e3dcff;
       color: #0a002c;
@@ -87,120 +81,38 @@
     footer a:hover {
       text-decoration: underline;
     }
-    b body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #f5f7fa, #e3dcff);
-    overflow-x: hidden;
-  }
-
-  /* Toggle Button (Bottom-Right) */
-  .dynamic-island {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 1000;
-    transition: box-shadow 0.3s ease;
-  }
-
-  .dynamic-island:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  }
-
-  .toggle-button {
-    font-size: 1.5rem;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-
-  /* Dynamic Island Content (Top-Middle) */
-  .island-content {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-    width: 300px;
-    padding: 20px;
-    display: none;
-    z-index: 999;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-
-  .island-content.active {
-    display: block;
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-
-  .menu-item {
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 10px 0;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-
-  .menu-item:hover {
-    color: rgb(122, 126, 255);
-    transform: scale(1.05);
-  }
-
-  /* Add Fade-In Animation */
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
+    .btn-close {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: none;
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+      background-color: transparent !important;
     }
-    to {
+    .btn-close.show {
+      display: block;
       opacity: 1;
-      transform: translateY(0);
     }
-  }
-
-  .island-content.active .menu-item {
-    animation: fadeInDown 0.3s ease;
-  }
   </style>
 </head>
 <body>
 <!-- Navbar -->
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Sanu's Portfolio</a>
-                    <div class="dynamic-island">
-                        <div class="toggle-button" onclick="toggleIsland()">☰</div>
-                    </div>
-                    <div class="island-content">
-                        <div class="menu-item">About</div>
-                        <div class="menu-item">Features</div>
-                        <div class="menu-item">Technologies</div>
-                    </div>
-  
-  
+      <button class="btn-primary btn-close" onclick="window.history.back()"></button>
     </div>
-  </nav>
-  
-  
+</nav>
+
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="container">
+    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvbWV8ZW58MHx8MHx8fDA%3D" 
+      alt="A professional profile picture representing Sanu" 
+      class="rounded-circle img-thumbnail mb-4" 
+      style="width: 150px; height: 150px;" 
+      loading="lazy">
     <h1>Welcome to My Professional Portfolio</h1>
     <p>Showcasing my work on Machine Learning and Web Development</p>
   </div>
@@ -210,7 +122,7 @@
 <section id="about" class="section">
   <div class="container">
     <h2 class="section-title">About the House Price Prediction Project</h2>
-    <p>This project uses Ridge Regression and Linear Regression models to predict house prices. By analyzing features such as area, bedrooms, square feet, and bathrooms, the model achieved an impressive 85% accuracy.</p>
+    <p>This project predicts house prices using machine learning algorithms, including Ridge Regression, Linear Regression, and Lasso Regression. It is built with Python, Pandas, NumPy, and Flask, and utilizes a fixed dataset of houses from Kaggle. The model predicts prices based on input features such as location, bedrooms, bathrooms, and square feet.</p>
   </div>
 </section>
 
@@ -219,9 +131,9 @@
   <div class="container">
     <h2 class="section-title">Key Features</h2>
     <ul class="features-list">
-      <li><i class="fas fa-check-circle"></i> Predict prices based on user input</li>
-      <li><i class="fas fa-check-circle"></i> Supports key features: Area, Bedrooms, Bathrooms, and Square Feet</li>
-      <li><i class="fas fa-check-circle"></i> Data-driven analysis using machine learning</li>
+      <li><i class="fas fa-check-circle"></i> Predicts prices based on user input</li>
+      <li><i class="fas fa-check-circle"></i> Supports essential features: location, bedrooms, bathrooms, and square feet</li>
+      <li><i class="fas fa-check-circle"></i> Utilizes multiple regression models for comparison</li>
     </ul>
   </div>
 </section>
@@ -230,11 +142,12 @@
 <section id="technologies" class="section">
   <div class="container">
     <h2 class="section-title">Technologies Used</h2>
-    <p>This project is powered by the following tools:</p>
+    <p>This project is powered by the following tools and libraries:</p>
     <ul class="features-list">
       <li><i class="fas fa-tools"></i> Python (NumPy, Pandas)</li>
-      <li><i class="fas fa-chart-line"></i> Ridge Regression and Linear Regression</li>
-      <li><i class="fas fa-database"></i> Data Visualization</li>
+      <li><i class="fas fa-chart-line"></i> Ridge Regression, Linear Regression, and Lasso Regression</li>
+      <li><i class="fas fa-database"></i> Flask for backend integration</li>
+      <li><i class="fas fa-database"></i> Kaggle dataset for training and testing</li>
     </ul>
   </div>
 </section>
@@ -249,28 +162,22 @@
 <script>
   AOS.init({ duration: 1000, once: true });
 </script>
+
 <script>
-    function toggleIsland() {
-      const islandContent = document.querySelector('.island-content');
-      islandContent.classList.toggle('active');
+  let lastScrollTop = 0;
+  const btnClose = document.querySelector('.btn-close');
+
+  window.addEventListener('scroll', function () {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      btnClose.classList.remove('show');
+    } else {
+      btnClose.classList.add('show');
     }
-  </script>
-<script>
-    function toggleIsland() {
-      const islandContent = document.querySelector('.island-content');
-      islandContent.classList.toggle('active');
-    }
-  
-    // Close the menu when a menu item is clicked
-    document.querySelectorAll('.menu-item').forEach((item) => {
-      item.addEventListener('click', () => {
-        const islandContent = document.querySelector('.island-content');
-        islandContent.classList.remove('active');
-      });
-    });
-  </script>
-  
-  
-  
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  });
+</script>
 </body>
 </html>
