@@ -103,7 +103,7 @@ body {
 
 #about-section {
   padding: 5px 10px;
-  background-color: white;
+ 
   text-align: start;
   font-family: 'Roboto', sans-serif;
   margin-top: 130px;
@@ -187,7 +187,7 @@ body {
   animation: fade-in 4s ease-in-out;
 }
 #about-section h5 {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Courier New', monospace; 
   font-size: 2rem;
   color: #333;
   animation: fade-in 4s ease-in-out;
@@ -337,7 +337,7 @@ body {
 #age-section {
   padding: 50px 20px;
   text-align: center;
-  background: linear-gradient(to bottom, white, whitesmoke); /* Soft gradient background */
+  /* Soft gradient background */
   color: #333; /* Darker text color for better contrast */
   font-family: 'Courier New', monospace;
   border-radius: 5px;
@@ -464,7 +464,7 @@ body {
 /* Skills Section Styling */
 /* Skills Section Styling */
 #skills-section {
-  background: linear-gradient(to bottom, whitesmoke, white); /* Light grey background */
+  /* Light grey background */
   padding: 50px 20px;
   border-radius: 10px;
   
@@ -550,7 +550,7 @@ body {
 
 
 #soft-skills-section {
-  background: linear-gradient(to bottom, white, whitesmoke); /* Light grey background */
+ 
   padding: 50px 20px;
   border-radius: 10px;
   
@@ -641,7 +641,7 @@ body {
 
 /* Projects Section */
 .projects-section {
-  background: linear-gradient(to bottom, whitesmoke, white); /* Match your website's theme */
+   /* Match your website's theme */
   padding: 50px 20px;
   text-align: center;
   font-family: Calibri, sans-serif;
@@ -763,7 +763,7 @@ body {
 
 .experience-section {
   padding: 40px 0;
-  background: linear-gradient(to bottom, white, whitesmoke);
+  background:white;
   overflow-x: hidden;
 }
 
@@ -889,7 +889,7 @@ body {
 
 .certifications-section {
   padding: 40px 20px;
-  background: linear-gradient(to bottom, white, whitesmoke);
+  
   overflow-x: hidden;
 }
 
@@ -941,7 +941,7 @@ body {
 /* Final Message Section */
 .final-message-section {
   padding: 40px 20px;
-  background-color: rgb(73, 76, 161);
+  background-color: #6549c9;
   text-align: center;
 }
 
@@ -990,12 +990,67 @@ body {
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: rgb(0, 0, 0);
-  font-family: 'Times New Roman', serif;
+  font-family: 'Courier New', monospace; 
   line-height: 1; /* Matches the line-height of h1 */
   padding: 2px 5px; /* Add vertical and horizontal padding to prevent clipping */
   vertical-align: middle; /* Aligns the text with "I am" */
   font-weight: bold;
 }
 
+#contact {
+  padding: 20px;
+  background-color:white;
+  border-radius: 8px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button {
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+#confirmationMessage {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+}
