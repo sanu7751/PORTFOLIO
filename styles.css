@@ -1051,3 +1051,10 @@ body {
   font-weight: 500;
   color: #100043;
 }
+#contact {
+  position: relative;  /* Ensure it's positioned normally */
+}
+
+#contact input, #contact textarea {
+  position: relative;  /* Remove if it's absolute/fixed */
+}
