@@ -650,13 +650,17 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   </script>
 
 <script>
-  // Prevent auto-focus on any input field on page load
+  // Prevent auto-focus on any input field and auto-scroll on page load
 window.addEventListener("load", function() {
-  // Ensure no field is focused by default
-  if (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA") {
+  // Prevent auto-scroll to #contact or any focus on elements within it
+  history.replaceState(null, null, window.location.href.split('#')[0]);
+
+  // Blur any active element (input, textarea) to prevent focus
+  if (document.activeElement) {
     document.activeElement.blur();
   }
 });
+
 
 </script>
 
