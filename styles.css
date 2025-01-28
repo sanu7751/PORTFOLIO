@@ -941,7 +941,7 @@ body {
 /* Final Message Section */
 .final-message-section {
   padding: 40px 20px;
-  background-color: #6549c9;
+  background-color: rgb(122, 126, 255);
   text-align: center;
 }
 
@@ -958,7 +958,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #e3dcff;
+  background-color: rgb(205, 206, 255);
   color: #0a002c;
   text-align: center;
   padding: 20px 0;
