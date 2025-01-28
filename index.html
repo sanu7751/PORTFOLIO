@@ -13,7 +13,9 @@
 
 </head>
 <body>
-  <!-- Navbar -->
+
+
+
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#" data-aos="fade-down">
@@ -24,7 +26,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -41,6 +43,11 @@
       </div>
     </div>
   </nav>
+
+
+
+
+  
   <nav class="navbar second-navbar">
     <div class="container">
       <div class="silver-block"></div>
@@ -94,7 +101,7 @@
 
 
 
-<section id="age-section" >
+<section id="age-section" class="container" >
   <div class="age-content" >
     <h1 data-aos="fade-right"  >Age:</h1>
     <p id="age" data-aos="fade-right" >Born on 24th July 2004.</p>
@@ -111,7 +118,7 @@
 
 
 
-<section id="skills-section" >
+<section id="skills-section" class="container"  >
   <h1 class="text-center" data-aos="fade-up">Skills & Expertise</h1><br>
   <p class="text-center" data-aos="fade-up" data-aos-delay="100">
     I am proficient in a wide range of technologies and tools that help me build efficient, scalable, and modern applications.
@@ -204,7 +211,7 @@
 
 
 
-<section id="soft-skills-section">
+<section id="soft-skills-section" class="container" >
   <h1 class="text-center" data-aos="fade-up">Soft Skills</h1><br>
   <p class="text-center" data-aos="fade-up" data-aos-delay="100">
     I possess essential soft skills that help me communicate, collaborate, and lead effectively in diverse environments.
@@ -375,7 +382,28 @@
   </div>
 </section>
 
-
+<section id="contact" class="section  container">
+  <div>
+    <h2 class="section-title">Contact Me</h2>
+    <p>If you have any questions or would like to get in touch, feel free to reach out to me through the form below.</p>
+    <form id="contact-form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    <div id="form-status" class="mt-3"></div>
+  </div>
+</section>
 
 
 
@@ -592,5 +620,49 @@ function scrollToTop() {
       typeEffect();
     });
   </script>
+  
+  <script>
+   // Initialize EmailJS (replace with your own API key)
+emailjs.init("YOUR_USER_ID");
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from submitting immediately
+
+  // Collect form data
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  // Send email using EmailJS
+  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+    .then(function(response) {
+      // Hide the form
+      document.getElementById("contactForm").style.display = "none";
+      // Show confirmation message
+      document.getElementById("confirmationMessage").style.display = "block";
+    }, function(error) {
+      alert("Failed to send the message. Please try again.");
+    });
+});
+
+  </script>
+
+<script>
+  // Prevent auto-focus on any input field on page load
+window.addEventListener("load", function() {
+  // Ensure no field is focused by default
+  if (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA") {
+    document.activeElement.blur();
+  }
+});
+
+</script>
+
+
+
+
+
 </body>
 </html>
