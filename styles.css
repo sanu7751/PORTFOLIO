@@ -182,18 +182,11 @@ body {
 #about-section h4 {
   font-family: 'Times New Roman', serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #333;
   animation: fade-in 4s ease-in-out;
 }
-#about-section h5 {
-  font-family: 'Courier New', monospace; 
-  font-size: 2.1rem;
-  color: #333;
-  animation: fade-in 4s ease-in-out;
-  font-weight: bold;
-}
-#about-section .btn-primary {
+section .btn-primary {
   background-color: rgb(49, 51, 125);
   color: white;
   padding: 10px 20px;
@@ -990,7 +983,7 @@ body {
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-size: 1.9rem;
+  font-size: 1rem;
   color: rgb(0, 0, 0);
   font-family: 'Courier New', monospace; 
   line-height: 1; /* Matches the line-height of h1 */
