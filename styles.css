@@ -1003,6 +1003,7 @@ body {
 
 /* Contact Section Styling */
 #contact {
+  position: relative;
   padding: 60px 20px;
   color: white!important;
 }
@@ -1050,4 +1051,8 @@ body {
 #contact .form-label {
   font-weight: 500;
   color: #100043;
+}
+#contact {
+  scroll-margin-top: 0;
+  scroll-snap-align: start;
 }
