@@ -172,17 +172,18 @@ body {
 
 #about-section h1 {
   font-size: 2.5rem;
-  color: rgb(71, 75, 181);
-  font-weight: bolder;
+  
+  font-weight: bold;
   animation: fade-in-down 2s ease-in-out;
   font-family: Georgia, serif !important;
 }
 
 #about-section h4 {
   font-family: Georgia, serif !important;
-  font-weight: 500;
+  font-weight: 900;
+  color: rgb(71, 75, 181);
   font-size: 1.55rem;
-  color: #333;
+  
   
 }
 #developer-section {
@@ -206,50 +207,19 @@ body {
   vertical-align: middle; /* Aligns the text with "I am" */
   font-weight: bold;
 }
-section .btn-primary {
-  background-color: rgb(49, 51, 125);
+section .btn-success{
+  margin-top: 20px;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 80px;
   font-size: 1rem;
   border: 2px solid transparent;
-  border-radius: 25px;
   position: relative;
   overflow: hidden;
-  transition: color 0.3s ease, transform 0.3s ease;
   z-index: 1;
 }
 
-#about-section .btn-primary:hover {
-  color: #fff;
-  transform: scale(1.1);
-  border-color: rgb(106, 68, 201);
-}
 
-#about-section .btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(106, 68, 201);
-  transition: left 0.5s ease;
-  z-index: -1;
-}
 
-#about-section .btn-primary:hover::before {
-  left: 0;
-}
-
-#about-section .btn-primary:active {
-  transform: scale(1.1);
-  background-color: rgb(106, 68, 201);
-  border-color: rgb(106, 68, 201);
-}
-
-#about-section .btn-primary:active::before {
-  left: 0;
-}
 
 @keyframes fade-in-down {
   from {
