@@ -449,8 +449,6 @@ section .btn:hover{
   /* Light grey background */
   padding: 50px 20px;
   border-radius: 10px;
-  
-  margin-bottom: 40px;
   font-family: Calibri, sans-serif;
 }
 
@@ -517,15 +515,18 @@ section .btn:hover{
     justify-content: center; /* Center the cards horizontally */
   }
 
-  #skills-section .col-md-4 {
+  #skills-section .col-md-4, 
+  #skills-section .col-6 { /* Ensure both visible and hidden sections follow the same rule */
     flex: 0 0 48%; /* Each card takes approximately half the width */
-    margin-bottom: 20px; /* Add some spacing between rows */
+    margin-bottom: 20px; /* Add spacing between rows */
   }
 
-  #skills-section .col-md-4:nth-child(odd) {
+  #skills-section .col-md-4:nth-child(odd),
+  #skills-section .col-6:nth-child(odd) {
     margin-right: 4%; /* Add spacing between cards in the same row */
   }
 }
+
 
 
 
@@ -948,4 +949,85 @@ section .btn:hover{
 
 .footer p {
   font-size: 14px;
+}
+
+
+
+#about {
+  color: black;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+#about h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(42, 43, 84); /* Heading Color */
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.about-buttons {
+  margin-top: 25px;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin: 10px;
+}
+
+.btn-primary {
+  background: rgb(122, 126, 255); /* Primary Button Color */
+  color: white;
+}
+
+.btn-secondary {
+  border: 2px solid rgb(92, 96, 255); /* Secondary Button Border Color */
+  color: rgb(92, 96, 255);
+}
+
+.btn-primary:hover {
+  background: rgb(92, 96, 255); /* Button Hover Color */
+}
+
+.btn-secondary:hover {
+  background: rgb(152, 156, 255);
+  color: white;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  #about {
+    padding: 60px 15px;
+  }
+
+  #about h1 {
+    font-size: 32px;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+
+  .btn-primary, .btn-secondary {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
 }
