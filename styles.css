@@ -151,8 +151,8 @@ body {
 
   .image {
     max-width: 70%; /* Smaller image section on small screens */
-    margin-bottom: 20px; /* Add spacing below the image */
-    margin-top: 25px; /* Remove unnecessary top margin */
+    margin-bottom: 25px; /* Add spacing below the image */
+    margin-top: 20px; /* Remove unnecessary top margin */
   }
 
   .btn-primary {
@@ -182,7 +182,7 @@ body {
 #about-section h4 {
   font-family: 'Times New Roman', serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   color: #333;
   
 }
@@ -979,7 +979,7 @@ section .btn-primary {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
   font-family: 'Courier New', monospace; 
-  line-height: 0.7; /* Matches the line-height of h1 */
+  line-height: 0.6; /* Matches the line-height of h1 */
   padding: 2px 5px; /* Add vertical and horizontal padding to prevent clipping */
   vertical-align: middle; /* Aligns the text with "I am" */
   font-weight: bold;
