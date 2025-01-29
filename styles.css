@@ -117,7 +117,7 @@ body {
 
 .content {
   max-width: 50%;
-  margin-top: 100px;;
+  margin-top: 50px;;
 }
 
 .image {
@@ -349,18 +349,19 @@ section .btn-primary {
   padding: 50px 20px;
   text-align: center;
   /* Soft gradient background */
-  color: #333; /* Darker text color for better contrast */
+  color: #ffffff; /* Darker text color for better contrast */
   font-family: 'Courier New', monospace;
   border-radius: 5px;
   margin: 0px auto;
   width: 100%;
   font-family: calibri,sans-serif;
+  background: linear-gradient(45deg, rgb(122, 126, 255), rgb(92, 96, 255), rgb(152, 156, 255), rgb(61, 63, 128));
 }
 
 .age-content h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color: #2c3e50; /* Dark color for headings */
+  color: #ffffff; /* Dark color for headings */
   text-transform: uppercase;
   letter-spacing: 2px;
   animation: fade-in-down 1.5s ease;
@@ -369,7 +370,7 @@ section .btn-primary {
 .age-content p {
   font-size: 1.5rem;
   margin: 10px 0;
-  color: #555; /* Slightly lighter color for paragraphs */
+  color: #ffffff; /* Slightly lighter color for paragraphs */
   letter-spacing: 2px;
 }
 
