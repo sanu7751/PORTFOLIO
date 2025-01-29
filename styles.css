@@ -172,17 +172,16 @@ body {
 
 #about-section h1 {
   font-size: 2.5rem;
-  
   font-weight: bold;
   animation: fade-in-down 2s ease-in-out;
-  font-family: Georgia, serif !important;
+  font-family: 'Carlito', sans-serif;
 }
 
 #about-section h4 {
-  font-family: Georgia, serif !important;
+  font-family: 'Carlito', sans-serif;
   font-weight: 900;
   color: rgb(71, 75, 181);
-  font-size: 1.55rem;
+  font-size: 2rem;
   
   
 }
@@ -199,7 +198,7 @@ body {
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   color: rgb(0, 0, 0);
   font-family: 'Courier New', monospace; 
   line-height: 0.7; /* Matches the line-height of h1 */
@@ -207,15 +206,21 @@ body {
   vertical-align: middle; /* Aligns the text with "I am" */
   font-weight: bold;
 }
-section .btn-success{
+section .btn{
+  background-color: rgb(59, 60, 172);
   margin-top: 20px;
+  font-weight: 800;
   color: white;
+  font-family: Calibri, Arial, sans-serif;
   padding: 10px 80px;
-  font-size: 1rem;
-  border: 2px solid transparent;
+  font-size: 1.2rem;
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+section .btn:hover{
+  background-color: rgb(59, 60, 172);
+  color: white;
 }
 
 
@@ -334,7 +339,6 @@ section .btn-success{
   color: #ffffff; /* Dark color for headings */
   text-transform: uppercase;
   letter-spacing: 2px;
-  animation: fade-in-down 1.5s ease;
 }
 
 .age-content p {
