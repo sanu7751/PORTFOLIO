@@ -1,6 +1,6 @@
 
 body {
-  background-color: white; 
+  background-color: rgb(245, 245, 245); 
   color: #000000; 
   height: 100%; /* Ensure full height */
   overflow-x: hidden;
@@ -179,8 +179,8 @@ body {
 }
 
 #about-section h4 {
-  font-family: 'Times New Roman', serif;
-  font-weight: bold;
+  font-family: Georgia, serif !important;
+  font-weight: 500;
   font-size: 1.55rem;
   color: #333;
   
@@ -355,7 +355,7 @@ section .btn-primary {
   margin: 0px auto;
   width: 100%;
   font-family: calibri,sans-serif;
-  background: linear-gradient(45deg, rgb(122, 126, 255), rgb(92, 96, 255), rgb(152, 156, 255), rgb(61, 63, 128));
+  background: linear-gradient(45deg, rgb(122, 126, 255), rgb(92, 96, 255), rgb(152, 156, 255), rgb(122, 126, 255), rgb(92, 96, 255));
 }
 
 .age-content h1 {
@@ -468,11 +468,6 @@ section .btn-primary {
     padding: 10px;
   }
 }
-
-
-
-
-
 /* Skills Section Styling */
 /* Skills Section Styling */
 #skills-section {
@@ -979,6 +974,3 @@ section .btn-primary {
 .footer p {
   font-size: 14px;
 }
-
-
-
