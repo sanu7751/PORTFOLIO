@@ -1,406 +1,281 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanu's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Carlito&display=swap" rel="stylesheet">
 
-body {
-  background-color: rgb(245, 245, 245); 
-  color: #000000; 
-  height: 100%; /* Ensure full height */
-  overflow-x: hidden;
-}
-.navbar {
-  background-color: white; 
-  font-weight: bolder;
-}
-.navbar-brand {
-  color: #000000 !important; 
-  font-weight: bolder;
-  font-family: 'Courier New', monospace; 
-  letter-spacing: 3px;
-}
-.nav-link {
-  position: relative;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  color: #000000; 
-  transition: color 0.3s ease;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #6549c9; 
-  transition: width 0.3s ease;
-}
-.nav-link:hover::after {
-  width: 100%;
-}
-.nav-link:hover {
-  color: #6549c9; 
-}
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6L24 24M6 24L24 6'/%3E%3C/svg%3E");
-}
-.navbar-toggler.collapsed .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-.navbar-toggler {
-  border: none !important;
-}
-.navbar-toggler:focus {
-  box-shadow: none;
-}
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
 
 
 
-.first-navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-.second-navbar {
-  position: fixed;
-  top: 55px;
-  width: 100%;
-  background-color: rgb(122, 126, 255);
-  z-index: 5;
-}
-.social-icons a {
-  margin-left: 10px;
-  font-size: 20px;
-  color: #ffffff;
-}
-.social-icons a:hover {
-  color: #000000; 
-}
-.second-navbar .navbar-brand  {
-  font-family: 'Poppins', sans-serif; 
-  font-size: 1.0rem; 
-  font-weight: bolder; 
-  color:white !important;
-}
-.navbar.second-navbar .silver-block {
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width:30%;
-  height: 50px;
-  background: linear-gradient(to left,#ffffff07, #ffffff22, #ffffff07);
-  animation: slide-left-to-right 5s infinite;
-}
-@keyframes slide-left-to-right {
-  0% {
-    left: -250%; 
-  }
-  100% {
-    left: 250%; 
-  }
-}
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" data-aos="fade-down">
+        <img src="logo.webp" alt="Logo" style="width: 30px; height: 30px; margin-right: 10px;"> <!-- Add your logo here -->
+        PORTFOLIO
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
 
 
-#about-section {
-  padding: 5px 10px;
- 
-  text-align: start;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 130px;
-}
-
-.s {
-  display: flex; /* Apply flex layout */
-  justify-content: space-between; /* Space between content and image */
-  align-items: center; /* Vertically center align */
-}
-
-.content {
-  max-width: 50%;
-  margin-top: 10px;;
-}
-
-.image {
-  max-width: 25%; /* Further reduced image section width */
-}
-
-#about-section img {
-  width: 100%; /* Make the image take the full container width */
-  height: auto;
-  border-radius: 300px 300px 0 0; /* Curve only the top corners */
-  overflow: hidden;
   
-}
+  <nav class="navbar second-navbar">
+    <div class="container">
+      <div class="silver-block"></div>
+      <span class="navbar-brand" data-aos="fade-right">SANU KUMAR PANDA</span>
+      <div class="social-icons"data-aos="fade-left">
+        <a href="https://github.com/sanu7751" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sanu-kumar-panda07" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/kumar_.07?igsh=MmM3aHFncTJodjd0" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </nav>
 
-@media (max-width: 768px) {
-  #about-section {
-    text-align: start; /* Center-align content on small screens */
-  }
 
-  .s {
-    flex-direction: column; /* Stack content and image vertically */
-    align-items: center; /* Center-align both content and image */
-  }
+<!-- Feedback Button Container -->
+<!-- Feedback Button -->
+<a href="https://wa.me/7205343991" class="feedback-btn" target="_blank">
+  <span class="feedback-btn-text">Feedback</span> <!-- Feedback Text -->
+  <i class="fab fa-whatsapp feedback-btn-icon"></i> <!-- WhatsApp Icon -->
+</a>
 
-  .content {
-    max-width: 100%; /* Content section takes full width on small screens */
-    margin-bottom: 20px;
-    margin-top: 0px;
-    order: -1; /* Move content before the image */
-  }
 
-  .image {
-    max-width: 70%; /* Smaller image section on small screens */
-    margin-bottom: 25px; /* Add spacing below the image */
-    margin-top: 20px; /* Remove unnecessary top margin */
-  }
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome icon -->
+</button>
 
-  .btn-primary {
-    margin-top: 20px;
-     /* Add spacing above the button */
-  }
-}
 
-@media (min-width: 769px) {
-  .content {
-    margin-left: 50px; /* Add margin on the left side of the content */
-  }
-  .image {
-    margin-top: 20px; /* Add margin on the left side of the image */
-  }
-}
-
-#about-section h1 {
-  font-size: 2.7rem;
-  font-weight: bold;
-  font-family: 'Carlito', sans-serif;
-}
-
-#about-section h4 {
-  font-family: 'Carlito', sans-serif;
-  font-weight: 900;
-  color: rgb(71, 75, 181);
-  font-size: 2rem;
   
+
+
+
+<section id="about-section" id="developer-section">
+  <div class="container s" >
+    <div class="content">
+      <h1>Hello!</h1>
+      
+      <h4>Welcome to my portfolio!</h4>
+      <h5>
+        <span id="dynamic-profession"></span>
+      </h5>
+      <a href="resume.html" type="button" class="btn"><i class="fa fa-file-pdf"></i> <span style="color: rgb(255, 247, 0);">View</span> My Resume >
+      </a>
+    </div>
+    <div class="image">
+      <img src="sanu.png" alt="Sanu">
+    </div>
+  </div>
+</section>
+<br><br><br>
+
+<section id="age-section"  >
+  <div class="age-content" >
+    <h1 class="container"  >Age:</h1>
+    <p id="age"  >Born on 24th July 2004.</p>
+    <p id="time-since"  >Time elapsed since my birth:</p>
+    <div class="counter" >
+      <p ><span id="years">0</span> Years</p>
+      <p ><span id="days">0</span> Days</p>
+      <p ><span id="hours">0</span> Hours</p>
+      <p ><span id="minutes">0</span> Minutes</p>
+      <p ><span id="seconds">0</span> Seconds</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="about">
+  <div class="about-container">
+    <div class="about-content">
+      <h1>👋 Hi, I'm <strong>Sanu</strong> </h1>
+      <p>
+        A passionate <strong>Full-Stack Web Developer</strong> skilled in modern technologies like 
+        <strong>React, Tailwind CSS, Node.js, Express.js, and MongoDB.</strong>
+      </p>
+      <p>
+        I specialize in building scalable, user-friendly web applications and have experience managing projects on 
+        <strong>GitHub</strong>. I also have strong foundations in <strong>Java, Data Structures & Algorithms (DSA), and basic C & Python.</strong>
+      </p>
+      <p>
+        I'm actively looking for opportunities to grow, contribute, and build impactful digital experiences. 
+      </p>
+      <div class="about-buttons">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Let's Connect</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="skills-section" class="container">
+  <h1 class="text-center" >Skills & Expertise</h1><br>
+  <p class="text-center" >
+    I am proficient in a wide range of technologies and tools that help me build efficient, scalable, and modern applications.
+  </p><br>
   
-}
-#developer-section {
-  padding: 20px 20px;
-  text-align: start;
-  margin-left: 50px;
-  font-size: 100px;
-  margin-top: 5px;
-  animation: fade-in 4s ease-in-out;
-}
-#dynamic-profession {
-  display: inline-block;
-  border-right: 2px solid rgba(0, 0, 0, 0.75);
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 1.5rem;
-  color: rgb(0, 0, 0);
-  font-family: 'Courier New', monospace; 
-  line-height: 0.7; /* Matches the line-height of h1 */
-  padding: 2px 5px; /* Add vertical and horizontal padding to prevent clipping */
-  vertical-align: middle; /* Aligns the text with "I am" */
-  font-weight: bold;
-}
-section .btn{
-  background-color: rgb(59, 60, 172);
-  margin-top: 20px;
-  font-weight: 800;
-  color: white;
-  font-family: Calibri, Arial, sans-serif;
-  padding: 10px 80px;
-  font-size: 1.2rem;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-section .btn:hover{
-  background-color: rgb(59, 60, 172);
-  color: white;
-}
+  <!-- Skills Row (Initially Visible) -->
+  <div class="row text-center">
+    <div class="col-md-4">
+      <i class="fab fa-html5"></i>
+      <h4>HTML5</h4>
+      <p>Strong expertise in building structured and semantic web pages.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fab fa-css3-alt"></i>
+      <h4>CSS3</h4>
+      <p>Creating responsive and visually appealing designs with CSS.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fab fa-js-square"></i>
+      <h4>JavaScript</h4>
+      <p>Skilled in adding interactivity and dynamic features to web applications.</p>
+    </div>
+  </div>
 
+  <!-- Hidden Skills (Initially Hidden) -->
+  <div id="hidden-skills" class="row text-center" style="display: none;">
+    <div class="col-md-4">
+      <i class="fab fa-react"></i>
+      <h4>React</h4>
+      <p>Building dynamic and reusable components for modern UIs.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fab fa-node"></i>
+      <h4>Node.js</h4>
+      <p>Developing scalable backend applications using Node.js.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-server"></i>
+      <h4>Express.js</h4>
+      <p>Experienced in creating RESTful APIs and server-side logic.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fab fa-java"></i>
+      <h4>Java</h4>
+      <p>Proficient in Object-Oriented Programming and backend development.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-code"></i>
+      <h4>Data Structures & Algorithms</h4>
+      <p>Strong problem-solving skills with efficient algorithms and data structures.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-paint-brush"></i>
+      <h4>Tailwind CSS</h4>
+      <p>Proficient in utility-first CSS for creating responsive designs quickly.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fab fa-github"></i>
+      <h4>GitHub</h4>
+      <p>Version control, collaboration, and open-source contributions.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fas fa-c"></i>
+      <h4>C (Basics)</h4>
+      <p>Experienced in creating RESTful APIs and server-side logic.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="fa-brands fa-python"></i>
+      <h4>Python (Basics)</h4>
+      <p>Experienced in creating RESTful APIs and server-side logic.</p>
+    </div>
+  </div>
 
-
-
-@keyframes fade-in-down {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-
-
-
-
-
-.feedback-btn {
-  position: fixed;
-  bottom: 20px; 
-  right: 20px; 
-  display: flex;
-  align-items: center;
-  background-color: white; 
-  border-radius: 30px; 
-  padding: 10px 15px; 
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.146);
-  z-index: 100;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none;
-  font-family: 'Courier New', monospace; 
-  font-weight: bold;
-}
-.feedback-btn:hover {
-  background-color: whitesmoke; 
-}
-.feedback-btn-icon:hover {
-  background-color: #0c9585; 
-}
-.feedback-btn-icon:active {
-  transform: scale(0.95); 
-  background-color: #075E54; 
-}
-.feedback-btn-text {
-  color: rgb(0, 0, 0);
-  font-size: 14px; 
-  margin-right: 10px; 
-  text-decoration: none;
-}
-.feedback-btn-icon {
-  background-color: #26d767; 
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 12px;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-  text-decoration: none;
-}
-@media only screen and (max-width: 768px) {
-  .feedback-btn {
-    bottom: 15px; 
-    right: 15px; 
-    padding: 8px 12px; 
-  }
-  .feedback-btn-text {
-    font-size: 12px; 
-  }
-  .feedback-btn-icon {
-    padding: 10px; 
-    font-size: 16px; 
-  }
-}
+  <!-- Show More / Show Less Button -->
+  <div class="text-center mt-4">
+    <button id="toggle-btn" class="btn btn-primary" onclick="toggleSkills()">Show More</button>
+  </div>
+</section>
 
 
 
 
 
-
-
-
-
-#age-section {
-  padding: 50px 20px;
-  text-align: center;
-  /* Soft gradient background */
-  color: #ffffff; /* Darker text color for better contrast */
-  font-family: 'Courier New', monospace;
-  border-radius: 5px;
-  margin: 0px auto;
-  width: 100%;
-  font-family: calibri,sans-serif;
-  background: linear-gradient(45deg, rgb(122, 126, 255), rgb(92, 96, 255), rgb(152, 156, 255), rgb(122, 126, 255), rgb(92, 96, 255));
-}
-
-.age-content h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #ffffff; /* Dark color for headings */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.age-content p {
-  font-size: 1.5rem;
-  margin: 10px 0;
-  color: #ffffff; /* Slightly lighter color for paragraphs */
-  letter-spacing: 2px;
-}
-
-.counter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.counter p {
-  font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.7); /* Light background for counter items */
-  padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  color: #333; /* Ensure counter text is dark for contrast */
-}
-
-@keyframes fade-in-down {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-  .age-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .age-content p {
-    font-size: 1.2rem;
-  }
-
-  .counter p {
-    font-size: 1rem;
-    padding: 8px 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .age-content h1 {
-    font-size: 2rem;
-  }
-
-  .counter p {
-    font-size: 0.9rem;
-    padding: 6px 12px;
-  }
-}
+<section id="soft-skills-section" class="container" >
+  <h1 class="text-center" >Soft Skills</h1><br>
+  <p class="text-center"  >
+    I possess essential soft skills that help me communicate, collaborate, and lead effectively in diverse environments.
+  </p><br>
+  <div class="row text-center" >
+    <!-- Communication -->
+    <div class="col-md-4">
+      <i class="fas fa-comments"></i>
+      <h4>Communication</h4>
+      <p>Clear and concise communication across teams and stakeholders.</p>
+    </div>
+    <!-- Teamwork -->
+    <div class="col-md-4">
+      <i class="fas fa-users"></i>
+      <h4>Teamwork</h4>
+      <p>Collaborating efficiently in team-based environments.</p>
+    </div>
+    <!-- Leadership -->
+    <div class="col-md-4">
+      <i class="fas fa-user-tie"></i>
+      <h4>Leadership</h4>
+      <p>Leading projects and motivating teams to achieve goals.</p>
+    </div>
+  </div>
+  <div class="row text-center" >
+    <!-- Problem-Solving -->
+    <div class="col-md-4">
+      <i class="fas fa-lightbulb"></i>
+      <h4>Problem-Solving</h4>
+      <p>Innovative solutions for complex challenges.</p>
+    </div>
+    <!-- Time Management -->
+    <div class="col-md-4">
+      <i class="fas fa-clock"></i>
+      <h4>Time Management</h4>
+      <p>Effectively prioritizing tasks to meet deadlines.</p>
+    </div>
+    <!-- Adaptability -->
+    <div class="col-md-4">
+      <i class="fas fa-sync-alt"></i>
+      <h4>Adaptability</h4>
+      <p>Thriving in dynamic and fast-paced environments.</p>
+    </div>
+  </div>
+</section>
 
 
 
@@ -409,208 +284,285 @@ section .btn:hover{
 
 
 
-.scroll-to-top {
-  position: fixed;
-  bottom: 80px; /* Feed button ke upar position dene ke liye */
-  right: 20px;
-  display: none; /* Initially hidden */
-  background-color: #2e7bff; /* Green background */
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  z-index: 1000;
+
+
+
+
+<section id="projects" class="projects-section">
+  <div class="container" data-aos="fade-right">
+    <h2 class="section-title">My Projects</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel" id="carousel">
+        <div class="carousel-card">
+          <a href="hpp.html" style="text-decoration: none;">
+            <h3>House Price Prediction</h3>
+            <p>Developed a model to predict house prices using area, bedrooms, square feet, and bathrooms with 85% accuracy.</p>
+            <div class="explore-link">
+              <span>Click to Explore</span><i class="arrow">→</i>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-card">
+          <a href="fms.html" style="text-decoration: none;">
+            <h3>Financial Management System</h3>
+            <p>Created a system to manage client portfolios and finances effectively.</p>
+            <div class="explore-link">
+              <span>Click to Explore</span><i class="arrow">→</i>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-card">
+          <a href="vrs.html" style="text-decoration: none;">
+            <h3>Voice Recognition System</h3>
+            <p>Built a system capable of recognizing and analyzing voice commands.</p>
+            <div class="explore-link">
+              <span>Click to Explore</span><i class="arrow">→</i>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-card">
+          <a href="sms.html" style="text-decoration: none;">
+            <h3>Student Management System</h3>
+            <p>Designed a platform for managing student records, including CRUD operations for admins.</p>
+            <div class="explore-link">
+              <span>Click to Explore</span><i class="arrow">→</i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="experience" class="experience-section"data-aos="fade-right">
+  <div class="container">
+    <h2 class="section-title"data-aos="fade-right">My Experience</h2>
+    <div class="experience-wrapper">
+      <!-- Cybersecurity Intern -->
+      <div class="experience-card"data-aos="fade-right">
+        <h3>Cybersecurity Intern</h3>
+        <p><strong>Yhills Online</strong> | Jan 2025 - Present</p>
+        <ul>
+          <li>Assist with identifying and analyzing security threats.</li>
+          <li>Collaborate with the team to enhance cybersecurity measures.</li>
+          <li>Contribute to research on cybersecurity trends and tools.</li>
+        </ul>
+      </div>
+      <!-- Product Promoter -->
+      <div class="experience-card"data-aos="fade-right">
+        <h3>Part-time Product Promoter</h3>
+        <p><strong>Forever</strong> | Jan 2025 - Present</p>
+        <ul>
+          <li>Promote products through online platforms and events.</li>
+          <li>Improve communication and sales skills by engaging with customers.</li>
+          <li>Assist in organizing promotional campaigns.</li>
+        </ul>
+      </div>
+      <!-- Hackathon Participation -->
+      <div class="experience-card"data-aos="fade-right">
+        <h3>Accenture Innovation Challenge</h3>
+        <p><strong>Accenture</strong> | 2025</p>
+        <ul>
+          <li>Collaborated with a team to develop innovative solutions for real-world problems.</li>
+          <li>Presented our project to a panel of industry experts and received feedback on improving our solution.</li>
+          <li>Focused on leveraging technology to drive business innovation and sustainability.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="certifications" class="certifications-section">
+  <div class="container">
+    <h2 class="section-title">My Certifications</h2>
+    <div class="certifications-cards">
+      <div class="certification-card">
+        <h3>Developing Back-End Apps with Node.js and Express</h3>
+        <p><strong>IBM</strong> | Completed: 2024</p>
+      </div>
+      <div class="certification-card">
+        <h3>Introduction to Front-End Development</h3>
+        <p><strong>Meta</strong> | Completed: 2024</p>
+      </div>
+      <div class="certification-card">
+        <h3>Java Data Structures and Algorithms</h3>
+        <p><strong>Apana College</strong> | Completed: 2024</p>
+      </div>
+      <div class="certification-card">
+        <h3>Backend with Java</h3>
+        <p><strong>Board Infinity</strong> | Completed: 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="final-message" class="final-message-section">
+  <div class="container">
+    <h2 class="final-title">Thank You for Visiting!</h2>
+    <p class="final-message">I appreciate you taking the time to explore my portfolio. Stay tuned for more updates and achievements!</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Sanu. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
   
-}
-.scroll-to-top:active {
-  transform: scale(0.95);
-}
-@media (min-width: 769px) {
-  .scroll-to-top {
-    bottom: 100px;
-    right: 50px;
-    padding: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .scroll-to-top {
-    bottom: 100px;
-    right: 30px;
-    padding: 10px;
-  }
-}
-/* Skills Section Styling */
-/* Skills Section Styling */
-#skills-section {
-  /* Light grey background */
-  padding: 50px 20px;
-  border-radius: 10px;
-  font-family: Calibri, sans-serif;
-}
-
-#skills-section h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #2c3e50; /* Dark color for headings */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-#skills-section p {
-  color: #555;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-#skills-section .row {
-  margin-top: 30px;
-}
-
-#skills-section .col-md-4 {
-  margin-bottom: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#skills-section .col-md-4:hover {
-  transform: translateY(-10px); /* Lift effect on hover */
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-#skills-section i {
-  font-size: 50px; /* Large icons */
-  color: #3498db; /* Your website's primary blue */
-  margin-bottom: 15px;
-}
-
-#skills-section h4 {
-  font-size: 20px;
-  color: #34495e; /* Complementary dark color */
-  margin-bottom: 10px;
-}
-
-#skills-section p {
-  font-size: 14px;
-  color: #777;
-}
-#skills-section .btn-primary {
-  background-color: #3498db; /* Same blue as the other elements */
-  border: none;
-  font-size: 16px;
-  padding: 12px 30px;
-  border-radius: 30px;
-  transition: background-color 0.3s;
-}
-
-#skills-section .btn-primary:hover {
-  background-color: #2980b9; /* Darker blue on hover */
-}
-@media (max-width: 768px) {
-  #skills-section .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the cards horizontally */
-  }
-
-  #skills-section .col-md-4, 
-  #skills-section .col-6 { /* Ensure both visible and hidden sections follow the same rule */
-    flex: 0 0 48%; /* Each card takes approximately half the width */
-    margin-bottom: 20px; /* Add spacing between rows */
-  }
-
-  #skills-section .col-md-4:nth-child(odd),
-  #skills-section .col-6:nth-child(odd) {
-    margin-right: 4%; /* Add spacing between cards in the same row */
-  }
-}
 
 
 
 
 
 
-#soft-skills-section {
- 
-  padding: 50px 20px;
-  border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  font-family: Calibri, sans-serif;
-}
+  <script>
+     AOS.init({
+          duration: 1000,
+          once: false,
+        });
+  </script>
 
-#soft-skills-section h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #2c3e50;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
 
-#soft-skills-section p {
-  color: #555;
-  font-size: 16px;
-  line-height: 1.6;
-}
 
-#soft-skills-section .row {
-  margin-top: 30px;
-}
 
-#soft-skills-section .col-md-4 {
-  margin-bottom: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+  <script>
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    document.addEventListener('click', function (e) {
+    const toggleButton = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+    if (!navbarCollapse.contains(e.target) && !toggleButton.contains(e.target)) {
+      navbarCollapse.classList.remove('show');
+      toggleButton.classList.add('collapsed');
+    }});
+  </script>
 
-#soft-skills-section .col-md-4:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
 
-#soft-skills-section i {
-  font-size: 50px;
-  color: #f39c12; /* Orange color for soft skills icons */
-  margin-bottom: 15px;
-}
+<script>
+  function updateCounter() {
+    const birthDate = new Date('2004-07-24T00:00:00');
+    const now = new Date();
+    const diff = now - birthDate;
 
-#soft-skills-section h4 {
-  font-size: 20px;
-  color: #34495e;
-  margin-bottom: 10px;
-}
+    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24)) % 365;
+    const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+    const minutes = Math.floor(diff / (1000 * 60)) % 60;
+    const seconds = Math.floor(diff / 1000) % 60;
 
-#soft-skills-section p {
-  font-size: 14px;
-  color: #777;
-}
-@media (max-width: 768px) {
-  #soft-skills-section .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Space between cards */
+    document.getElementById('years').textContent = years;
+    document.getElementById('days').textContent = days;
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = minutes;
+    document.getElementById('seconds').textContent = seconds;
   }
 
-  #soft-skills-section .col-md-4 {
-    flex: 0 0 calc(33.33% - 10px); /* 3 cards per row */
-    max-width: calc(33.33% - 10px);
-    margin-bottom: 10px; /* Adjust spacing */
-  }
+  // Update the counter every second
+  setInterval(updateCounter, 1000);
+  updateCounter(); // Initial update
+</script>
 
-  #soft-skills-section i {
-    font-size: 30px; /* Smaller icons for mobile */
-    margin-bottom: 5px;
-  }
 
-  #soft-skills-section h4 {
-    font-size: 14px; /* Smaller titles for mobile */
-  }
 
-  #soft-skills-section p {
-    font-size: 12px; /* Smaller descriptions for mobile */
+<script>
+  const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+// Show or hide the button on scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = 'flex'; // Show the button
+  } else {
+    scrollToTopButton.style.display = 'none'; // Hide the button
   }
+});
+
+// Scroll to the top function
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
 }
 
+</script>
+
+
+
+
+
+
+<script>
+  const carousel = document.querySelector('#carousel');
+  let isDragging = false;
+  let startX, scrollLeft, autoScrollInterval;
+
+  // Drag Scroll
+  carousel.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    carousel.classList.add('dragging');
+  });
+
+  carousel.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll faster
+    carousel.scrollLeft = scrollLeft - walk;
+  });
+
+  carousel.addEventListener('mouseup', () => {
+    isDragging = false;
+    carousel.classList.remove('dragging');
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    isDragging = false;
+    carousel.classList.remove('dragging');
+  });
+</script>
 
 
 
@@ -619,414 +571,53 @@ section .btn:hover{
 
 
 
-
-
-/* Projects Section */
-.projects-section {
-   /* Match your website's theme */
-  padding: 50px 20px;
-  text-align: center;
-  font-family: Calibri, sans-serif;
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const professions = ["A Developer","A UI/UX Designer","App Developer"];
+      const typingElement = document.getElementById("dynamic-profession");
+      let index = 0;
+      let charIndex = 0;
+      let isDeleting = false;
   
-}
-
-.section-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #2c3e50; /* Dark color for headings */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* Carousel Wrapper */
-.carousel-wrapper {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-  padding: 20px 0;
-}
-
-/* Carousel */
-.carousel {
-  display: flex;
-  gap: 20px;
-  scroll-behavior: smooth;
-  overflow-x: auto;
-  padding: 10px;
-  scrollbar-width: none; /* For Firefox */
-}
-
-.carousel::-webkit-scrollbar {
-  display: none; /* Hide scrollbar */
-}
-
-/* Carousel Card */
-.carousel-card {
-  flex: 0 0 300px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+      const typeEffect = () => {
+        const currentText = professions[index];
+        if (isDeleting) {
+          charIndex--;
+        } else {
+          charIndex++;
+        }
   
-}
-
-.carousel-card h3 {
-  font-size: 1.3rem;
-  color: #1e90ff;
-  margin-bottom: 10px;
+        typingElement.textContent = currentText.substring(0, charIndex);
   
-}
-
-.carousel-card p {
-  font-size: 0.9rem;
-  color: #333;
-  line-height: 1.4;
-}
-
-.carousel-card:hover {
-  transform: scale(1.05);
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-  .carousel-card {
-    flex: 0 0 250px;
-  }
-}
-.explore-link {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 10px;
-  color: #007BFF;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-
-.carousel-card:hover .explore-link {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.explore-link .arrow {
-  margin-left: 5px;
-  font-size: 20px;
-  transition: transform 0.3s ease;
-}
-
-.carousel-card:hover .explore-link .arrow {
-  transform: translateX(5px);
-}
-
-.explore-link span {
-  margin-right: 5px;
-}
-
-.carousel-card {
-  position: relative;
-}
-
-/* Removed the arrow from the ::after pseudo-element */
-.carousel-card::after {
-  content: "";
-  opacity: 0;
-}
-
-
-
-
-
-
-.experience-section {
-  padding: 40px 0;
-  background:white;
-  overflow-x: hidden;
-}
-
-.experience-section .section-title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 28px;
-}
-
-.experience-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.experience-card {
-  background-color: #fff;
-  padding: 20px;
-  margin: 15px;
-  width: 45%;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.experience-card h3 {
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.experience-card p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.experience-card ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.experience-card ul li {
-  font-size: 16px;
-  color: #555;
-}
-
-@media screen and (max-width: 768px) {
-  .experience-card {
-    width: 100%;
-  }
-}
-.hackathon-experience-section {
-  padding: 40px 0;
-  background-color: #f9f9f9;
-}
-
-.hackathon-experience-section .section-title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 28px;
-}
-
-.hackathon-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.hackathon-card {
-  background-color: #fff;
-  padding: 20px;
-  margin: 15px;
-  width: 50%;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hackathon-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.hackathon-card h3 {
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.hackathon-card p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.hackathon-card ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.hackathon-card ul li {
-  font-size: 16px;
-  color: #555;
-}
-
-@media screen and (max-width: 768px) {
-  .hackathon-card {
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-.certifications-section {
-  padding: 40px 20px;
+        if (!isDeleting && charIndex === currentText.length) {
+          setTimeout(() => (isDeleting = true), 1000); // Pause before deleting
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          index = (index + 1) % professions.length;
+        }
   
-  overflow-x: hidden;
-}
-
-.certifications-section .section-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.certifications-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.certification-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
-}
-
-.certification-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.certification-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.certification-card p {
-  font-size: 16px;
-  color: #555;
-}
+        setTimeout(typeEffect, isDeleting ? 50 : 150); // Typing and deleting speed
+      };
+  
+      typeEffect();
+    });
+  </script>
 
 
+<script>
+  function toggleSkills() {
+    let hiddenSkills = document.getElementById("hidden-skills");
+    let toggleBtn = document.getElementById("toggle-btn");
 
-.certification-message {
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 10px;
-  overflow-y: hidden;
-}
-
-/* Final Message Section */
-.final-message-section {
-  padding: 40px 20px;
-  background-color: rgb(122, 126, 255);
-  text-align: center;
-}
-
-.final-title {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.final-message {
-  font-size: 18px;
-  color: #ffffff;
-}
-
-/* Footer */
-.footer {
-  background-color: rgb(205, 206, 255);
-  color: #0a002c;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer p {
-  font-size: 14px;
-}
-
-
-
-#about {
-  color: black;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.about-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-
-#about h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: rgb(42, 43, 84); /* Heading Color */
-}
-
-#about p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #000000;
-  margin-bottom: 15px;
-}
-
-.about-buttons {
-  margin-top: 25px;
-}
-
-.btn-primary, .btn-secondary {
-  display: inline-block;
-  padding: 12px 25px;
-  font-size: 18px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s ease;
-  margin: 10px;
-}
-
-.btn-primary {
-  background: rgb(122, 126, 255); /* Primary Button Color */
-  color: white;
-}
-
-.btn-secondary {
-  border: 2px solid rgb(92, 96, 255); /* Secondary Button Border Color */
-  color: rgb(92, 96, 255);
-}
-
-.btn-primary:hover {
-  background: rgb(92, 96, 255); /* Button Hover Color */
-}
-
-.btn-secondary:hover {
-  background: rgb(152, 156, 255);
-  color: white;
-}
-
-/* 📱 Mobile Responsive */
-@media (max-width: 768px) {
-  #about {
-    padding: 60px 15px;
+    if (hiddenSkills.style.display === "none") {
+      hiddenSkills.style.display = "flex";
+      toggleBtn.innerText = "Show Less";
+    } else {
+      hiddenSkills.style.display = "none";
+      toggleBtn.innerText = "Show More";
+    }
   }
+</script>
 
-  #about h1 {
-    font-size: 32px;
-  }
-
-  #about p {
-    font-size: 16px;
-  }
-
-  .btn-primary, .btn-secondary {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-}
+</body>
+</html>
