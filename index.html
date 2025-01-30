@@ -584,9 +584,10 @@ function scrollToTop() {
   });
 </script>
 <script>
-  // Set the timeout for splash screen duration (5 seconds) outside window.onload
-  setTimeout(function() {
-    window.onload = function() {
+  // Wait for the DOM to fully load
+  window.onload = function() {
+    // Set the timeout for splash screen duration (5 seconds)
+    setTimeout(function() {
       // Hide the splash screen and show the main content
       document.getElementById("splash-screen").style.display = "none";
       document.getElementById("main-content").classList.remove("hidden");
@@ -597,8 +598,8 @@ function scrollToTop() {
         duration: 7000,
         once: false, // Adjust to true if you want the animations to run only once
       });
-    };
-  }, 3000); // 5000 milliseconds = 5 seconds
+    }, 5000); // 5000 milliseconds = 5 seconds
+  };
 </script>
 
 </body>
