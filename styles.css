@@ -152,7 +152,7 @@ body {
 
   .image {
     max-width: 70%; /* Smaller image section on small screens */
-    margin-bottom: 25px; /* Add spacing below the image */
+    margin-bottom: 20px; /* Add spacing below the image */
     margin-top: 20px; /* Remove unnecessary top margin */
   }
 
