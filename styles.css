@@ -1,3 +1,5 @@
+
+
 body {
   background-color: white;
   color: #000000; 
@@ -836,7 +838,7 @@ td {
 
 /* Responsive design */
 @media (max-width: 600px) {
-  .container {
+  .x {
     padding: 15px;
   }
 }
