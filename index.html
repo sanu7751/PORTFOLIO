@@ -554,7 +554,6 @@ function scrollToTop() {
     }
   }
 </script>
-
 <script>
   (function() {
     emailjs.init("Qu1fiyQbm7Hptw6g7"); // Replace with your EmailJS User ID
@@ -567,7 +566,7 @@ function scrollToTop() {
 
     let params = {
       name: document.getElementById("name").value,
-      email: userEmail, // Pass user email to auto-reply
+      email: userEmail, // Pass user email
       message: document.getElementById("message").value,
     };
 
@@ -589,6 +588,7 @@ function scrollToTop() {
       });
   });
 </script>
+
 
 
 
