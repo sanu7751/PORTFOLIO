@@ -1,5 +1,3 @@
-
-
 body {
   background-color: white;
   color: #000000; 
@@ -764,28 +762,24 @@ td {
 
 /* Container styling */
 .x {
-  max-width: 50%;
-  margin: 50px auto;
-  padding: 20px;
-  border-radius: 8px;
+  max-width: 600px;
+  
   text-align: center;
 }
 
 /* Contact heading */
 .x h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
   color: #2c3e50; /* Dark color for headings */
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 2rem!important;
+  font-size: 2rem;
 }
 
 /* Form styling */
 #contact-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   text-align: left;
 }
 
@@ -795,20 +789,21 @@ td {
   font-weight: bold;
 }
 
+/* Input fields */
 #contact-form input,
 #contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 1rem;
   transition: 0.3s ease-in-out;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-  border-color: #5c60ff; /* Match your blue theme */
+  border-color: #5c60ff;
   outline: none;
   box-shadow: 0 0 5px rgba(92, 96, 255, 0.5);
 }
@@ -822,12 +817,13 @@ td {
 /* Submit Button */
 #contact-form button {
   width: 100%;
-  padding: 12px;
-  background-color: #5c60ff; /* Your blue theme */
+  padding: 14px;
+  background-color: #5c60ff;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -837,11 +833,29 @@ td {
 }
 
 /* Responsive design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .x {
+    width: 90%;
     padding: 15px;
+    margin: 30px auto;
+  }
+
+  #contact-form {
+    gap: 12px;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  #contact-form button {
+    padding: 12px;
+    font-size: 0.95rem;
   }
 }
+
 /* Final Message Section */
 .final-message-section {
   padding: 40px 20px;
