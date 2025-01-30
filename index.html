@@ -381,6 +381,22 @@
 <br><br><br>
 
 
+<div class="container">
+  <h2>Contact Me</h2>
+  <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+<br><br><br>
 
 
 <section id="final-message" class="final-message-section">
@@ -397,52 +413,32 @@
 </footer>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   <script>
      AOS.init({
           duration: 1000,
           once: false,
         });
   </script>
-
-
-
 
   <script>
     const navbarToggler = document.querySelector('.navbar-toggler');
@@ -455,7 +451,6 @@
       toggleButton.classList.add('collapsed');
     }});
   </script>
-
 
 <script>
   function updateCounter() {
@@ -481,8 +476,6 @@
   updateCounter(); // Initial update
 </script>
 
-
-
 <script>
   const scrollToTopButton = document.querySelector('.scroll-to-top');
 
@@ -502,13 +495,7 @@ function scrollToTop() {
     behavior: 'smooth',
   });
 }
-
 </script>
-
-
-
-
-
 
 <script>
   const carousel = document.querySelector('#carousel');
@@ -542,13 +529,6 @@ function scrollToTop() {
   });
 </script>
 
-
-
-
-
-
-
-
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const professions = ["A Developer","A UI/UX Designer","App Developer"];
@@ -581,7 +561,6 @@ function scrollToTop() {
     });
   </script>
 
-
 <script>
   function toggleSkills() {
     let hiddenSkills = document.getElementById("hidden-skills");
@@ -596,6 +575,25 @@ function scrollToTop() {
     }
   }
 </script>
+
+
+<script type="text/javascript">
+  (function() {
+    emailjs.init('Qu1fiyQbm7Hptw6g7'); // Replace with your EmailJS User ID
+  })();
+  
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    emailjs.sendForm('service_rp8apkh', 'template_snhnrid', this)
+      .then(function(response) {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send message, please try again.');
+      });
+  });
+</script>
+
 
 </body>
 </html>
