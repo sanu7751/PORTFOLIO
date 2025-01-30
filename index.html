@@ -585,20 +585,21 @@ function scrollToTop() {
       });
   });
 </script>
+
 <script>
+  // Wait for the DOM to fully load
   window.onload = function() {
     // Set the timeout for splash screen duration (5 seconds)
     setTimeout(function() {
+      // Hide the splash screen and show the main content
       document.getElementById("splash-screen").style.display = "none";
       document.getElementById("main-content").classList.remove("hidden");
-  
-      // Add fade-in effect for main content
       document.getElementById("main-content").classList.add("show");
 
-      // Initialize AOS after main content is shown
+      // Initialize AOS after the main content is visible
       AOS.init({
-        duration: 10000,
-        once: false,
+        duration: 7000,
+        once: false, // Adjust to true if you want the animations to run only once
       });
     }, 5000); // 5000 milliseconds = 5 seconds
   };
