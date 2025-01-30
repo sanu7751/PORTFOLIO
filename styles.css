@@ -328,7 +328,7 @@ body {
     font-family: 'Courier New', monospace;
     border-radius: 5px;
     margin: 0px auto;
-    width: 100%;
+    width: auto;
     font-family: calibri,sans-serif;
     background: linear-gradient(45deg, rgb(122, 126, 255), rgb(92, 96, 255), rgb(152, 156, 255), rgb(122, 126, 255), rgb(92, 96, 255));
   }
@@ -736,6 +736,7 @@ body {
     padding: 40px 20px;
     background-color: rgb(122, 126, 255);
     text-align: center;
+    width: auto;
   }
   
   .final-title {
