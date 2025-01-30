@@ -562,33 +562,15 @@ function scrollToTop() {
   document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent page reload
 
-    let userEmail = document.getElementById("email").value; // Get user email
-
-    let params = {
-      name: document.getElementById("name").value,
-      email: userEmail, // Pass user email
-      message: document.getElementById("message").value,
-    };
-
-    // Send Email to Admin (You)
-    emailjs.send("service_rp8apkh", "template_snhnrid", params)
+    emailjs.sendForm("service_rp8apkh", "template_snhnrid", this)
       .then(function(response) {
-        console.log("Message sent to Admin", response);
-      }, function(error) {
-        console.log("Error sending admin message", error);
-      });
-
-    // Send Auto-Reply to User
-    emailjs.send("service_rp8apkh", "template_sms8m07", params)
-      .then(function(response) {
-        alert("Message sent! A confirmation email has been sent to your email.");
+        alert("Message sent successfully!");
         document.getElementById("contact-form").reset(); // Clear form after submission
       }, function(error) {
         alert("Failed to send message. Please try again.");
       });
   });
 </script>
-
 
 
 
