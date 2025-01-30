@@ -554,8 +554,7 @@ function scrollToTop() {
     }
   }
 </script>
-
-<script>
+  <script>
   (function() {
     emailjs.init("Qu1fiyQbm7Hptw6g7"); // Replace with your EmailJS User ID
   })();
@@ -563,17 +562,30 @@ function scrollToTop() {
   document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent page reload
 
-    emailjs.sendForm("service_rp8apkh", "template_snhnrid", this)
+    let params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    // Send Email to Admin (You)
+    emailjs.send("service_rp8apkh", "template_snhnrid", params)
       .then(function(response) {
-        alert("Message sent successfully!");
+        console.log("Message sent to Admin", response);
+      }, function(error) {
+        console.log("Error sending admin message", error);
+      });
+
+    // Send Auto-Reply to User
+    emailjs.send("service_rp8apkh", "template_sms8m07", params)
+      .then(function(response) {
+        alert("Message sent! A confirmation email has been sent to your email.");
         document.getElementById("contact-form").reset(); // Clear form after submission
       }, function(error) {
         alert("Failed to send message. Please try again.");
       });
   });
 </script>
-
-
 
 
 </body>
