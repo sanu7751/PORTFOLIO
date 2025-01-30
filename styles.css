@@ -1087,15 +1087,15 @@ td {
 
 /* Dot color changes */
 @keyframes loadingDots {
-  0%, 100% {
+  50% {
     opacity: 0.5;
     background-color: #ffffff; /* Orange */
   }
-  33% {
+  75% {
     opacity: 1;
     background-color: #ffffff; /* Green */
   }
-  66% {
+100% {
     opacity: 0.5;
     background-color: white; /* White */
   }
