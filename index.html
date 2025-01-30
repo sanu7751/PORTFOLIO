@@ -381,9 +381,9 @@
 <br><br><br>
 
 
-<div class="container">
+<div class="container x">
   <h2>Contact Me</h2>
-  <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+  <form id="contact-form">
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required>
 
@@ -429,7 +429,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
@@ -576,23 +576,25 @@ function scrollToTop() {
   }
 </script>
 
-
-<script type="text/javascript">
+<script>
   (function() {
-    emailjs.init('Qu1fiyQbm7Hptw6g7'); // Replace with your EmailJS User ID
+    emailjs.init("Qu1fiyQbm7Hptw6g7"); // Replace with your EmailJS User ID
   })();
-  
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    emailjs.sendForm('service_rp8apkh', 'template_snhnrid', this)
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    emailjs.sendForm("service_rp8apkh", "template_snhnrid", this)
       .then(function(response) {
-        alert('Message sent successfully!');
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset(); // Clear form after submission
       }, function(error) {
-        alert('Failed to send message, please try again.');
+        alert("Failed to send message. Please try again.");
       });
   });
 </script>
+
+
 
 
 </body>
