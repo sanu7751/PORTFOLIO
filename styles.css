@@ -1060,68 +1060,6 @@ td {
     color: white;
   }
   100% {
-    color: green;
-  }
-}
-
-/* Loading dots animation */
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.dot {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  margin: 0 10px;
-  background-color: #fff;
-  opacity: 0.5;
-  animation: loadingDots 1.5s infinite ease-in-out;
-}
-
-/* Dot color changes */
-@keyframes loadingDots {
-  50% {
-    opacity: 0.5;
-    background-color: black; /* Orange */
-  }
-  75% {
-    opacity: 1;
-    background-color: black; /* Green */
-  }
-100% {
-    opacity: 0.5;
-    background-color: black; /* White */
-  }
-}
-
-/* Create a circular movement effect for dots */
-.dot:nth-child(1) {
-  animation-delay: 0s;
-}
-.dot:nth-child(2) {
-  animation-delay: 0.5s;
-}
-.dot:nth-child(3) {
-  animation-delay: 1s;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .welcome-text {
-    font-size: 36px;
-  }
-  .letter {
-    font-size: 36px;
-  }
-  .dot {
-    width: 12px;
-    height: 12px;
+    color: orange;
   }
 }
