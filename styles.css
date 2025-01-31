@@ -1089,15 +1089,15 @@ td {
 @keyframes loadingDots {
   50% {
     opacity: 0.5;
-    background-color: blue; /* Orange */
+    background-color: black; /* Orange */
   }
   75% {
     opacity: 1;
-    background-color: blue; /* Green */
+    background-color: black; /* Green */
   }
 100% {
     opacity: 0.5;
-    background-color: blue; /* White */
+    background-color: black; /* White */
   }
 }
 
