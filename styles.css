@@ -62,8 +62,9 @@ body {
   position: fixed;
   top: 55px;
   width: 100%;
-  background-color: rgb(122, 126, 255);
+  background-color: #674cc4;
   z-index: 5;
+  height:20px
 }
 .social-icons a {
   margin-left: 10px;
@@ -250,7 +251,6 @@ section .btn:hover{
 
 #unique-intro {
   padding: 80px 20px;
-  background-color: #f8faff;;
   text-align: start;
   color: #000000;
   font-family: 'Arial', sans-serif;
@@ -350,7 +350,6 @@ section .btn:hover{
 
 #skills-section {
   padding: 50px 20px;
-  background: #f8faff;
   border-radius: 10px;
   text-align: center;
   overflow-x: hidden;
