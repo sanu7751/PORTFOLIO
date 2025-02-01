@@ -353,7 +353,7 @@ section .btn:hover{
 .table-container {
   width: 100%;
 
-  overflow-x: auto;  /* Allows horizontal scrolling on smaller screens */
+  overflow-x: hidden;  /* Allows horizontal scrolling on smaller screens */
 }
 
 /* Title styling */
