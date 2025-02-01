@@ -120,22 +120,68 @@
         </section>
         <br><br><br>
 
+        <section id="unique-intro">
+          <div class="unique-container">
+            <div class="unique-content">
+              <h1 data-aos="fade-up">👋 Hi, I'm <strong>Sanu</strong></h1>
+              <p data-aos="fade-up" data-aos-delay="200">
+                A passionate <strong>Full-Stack Web Developer</strong> skilled in modern technologies like 
+                <strong>React, Tailwind CSS, Node.js, Express.js, and MongoDB.</strong>
+              </p>
+              <p data-aos="fade-up" data-aos-delay="400">
+                I specialize in building scalable, user-friendly web applications and have experience managing projects on 
+                <strong>GitHub</strong>. I also have strong foundations in <strong>Java, Data Structures & Algorithms (DSA), and basic C & Python.</strong>
+              </p>
+              <p data-aos="fade-up" data-aos-delay="600">
+                I'm actively looking for opportunities to grow, contribute, and build impactful digital experiences.
+              </p>
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="800">
+                <a href="#projects" class="cta-btn primary-btn">View My Work</a>
+                <a href="#contact" class="cta-btn secondary-btn">Let's Connect</a>
+              </div>
+            </div>
+          </div>
+        </section>
         
-        
-        <br><br><br>
-
-
-
-
-        
-
         
         <br>
         <br>
         <br>
 
 
+        <section id="skills-section" class="container">
+          <h1 class="text-center" data-aos="fade-right">Skills & Expertise</h1>
+          <p class="text-center" data-aos="fade-right">
+            I am proficient in a wide range of technologies that help me build efficient and scalable applications.
+          </p>
         
+          <div class="skills-grid">
+            <div class="skill" data-aos="fade-up">
+              <h4>HTML5</h4>
+              <div class="progress-bar"><span data-width="95%"></span></div>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="100">
+              <h4>CSS3</h4>
+              <div class="progress-bar"><span data-width="90%"></span></div>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="200">
+              <h4>JavaScript</h4>
+              <div class="progress-bar"><span data-width="85%"></span></div>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="300">
+              <h4>React</h4>
+              <div class="progress-bar"><span data-width="80%"></span></div>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="400">
+              <h4>Node.js</h4>
+              <div class="progress-bar"><span data-width="75%"></span></div>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="500">
+              <h4>Java</h4>
+              <div class="progress-bar"><span data-width="80%"></span></div>
+            </div>
+          </div>
+        </section>
         <br><br><br>
 
 
@@ -290,30 +336,6 @@
       toggleButton.classList.add('collapsed');
     }});
   </script>
-
-<script>
-  function updateCounter() {
-    const birthDate = new Date('2004-07-24T00:00:00');
-    const now = new Date();
-    const diff = now - birthDate;
-
-    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24)) % 365;
-    const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
-    const minutes = Math.floor(diff / (1000 * 60)) % 60;
-    const seconds = Math.floor(diff / 1000) % 60;
-
-    document.getElementById('years').textContent = years;
-    document.getElementById('days').textContent = days;
-    document.getElementById('hours').textContent = hours;
-    document.getElementById('minutes').textContent = minutes;
-    document.getElementById('seconds').textContent = seconds;
-  }
-
-  // Update the counter every second
-  setInterval(updateCounter, 1000);
-  updateCounter(); // Initial update
-</script>
 
 <script>
   const scrollToTopButton = document.querySelector('.scroll-to-top');
