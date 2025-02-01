@@ -902,7 +902,7 @@ section .btn:hover{
   opacity: 0;
   transform: translateY(-100%);
   animation: letterAnimation 2s forwards, colorChange 3s infinite alternate;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   margin: 0 5px;
 }
