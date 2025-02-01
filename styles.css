@@ -1,5 +1,6 @@
 
 
+
 body {
   background-color: white;
   color: #000000; 
@@ -61,7 +62,7 @@ body {
   z-index: 10;
 }
 .second-navbar {
-   position: fixed;
+  position: fixed;
   top: 55px;
   width: 100%;
   background-color: rgb(122, 126, 255);
@@ -138,6 +139,7 @@ body {
 }
 @media (max-width: 768px) {
   #about-section {
+    margin-top: 130px;
     text-align: start; /* Center-align content on small screens */
   }
 
