@@ -346,63 +346,6 @@ section .btn:hover{
 
 
 
-
-
-.table-container {
-  width: 100%;
-
-  overflow-x: auto;  /* Allows horizontal scrolling on smaller screens */
-}
-
-/* Title styling */
-.table-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #2c3e50;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 2rem;
-}
-
-/* Table styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  
-  font-size: 1rem; /* Relative font size */
-}
-
-/* Header styling */
-th {
-  padding: 8px;
-  border: 1px solid #ddd;
-  text-align: left;
-  background-color: rgb(122, 126, 255);
-  color: white;
-}
-
-/* Body cell styling */
-td {
-  padding: 8px;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-/* Responsive text adjustments */
-@media (max-width: 768px) {
-  table {
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
-  }
-
-  th, td {
-    padding: 6px; /* Adjust padding for better fitting */
-  }
-}
-
-
-
-
 /* Skills Section Styling */
 
 #skills-section {
@@ -410,6 +353,7 @@ td {
   background: #f8faff;
   border-radius: 10px;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .skills-grid {
