@@ -354,6 +354,7 @@ section .btn:hover{
   border-radius: 10px;
   text-align: center;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .skills-grid {
