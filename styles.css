@@ -248,57 +248,54 @@ section .btn:hover{
 
 
 
-
-#unique-intro-section {
+#unique-intro {
   padding: 80px 20px;
-  background-color: #F4F6FF; /* Light Background */
-  text-align: center;
-  color: #2C3E50; /* Dark text for contrast */
-  font-family: 'Helvetica Neue', sans-serif;
-  
+  background: linear-gradient(75deg, rgba(139, 143, 255, 0.8), rgba(92, 96, 255, 0.8));
+  text-align: start;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
 }
 
 .unique-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .unique-content {
   max-width: 800px;
 }
 
-#unique-intro-section h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #5D5FEF; /* Vibrant Accent Color */
+#unique-intro h1 {
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
 }
 
-#unique-intro-section p {
+#unique-intro p {
   font-size: 1.2rem;
   line-height: 1.7;
-  margin-bottom: 30px;
-  color: #333;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.unique-cta-buttons {
+.cta-buttons {
   margin-top: 30px;
 }
 
-.unique-btn {
-  padding: 15px 35px;
+.cta-btn {
+  padding: 15px 30px;
   font-size: 1.1rem;
   border-radius: 25px;
   text-decoration: none;
-  margin: 12px;
   display: inline-block;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   text-transform: uppercase;
+  margin: 10px;
 }
 
 .primary-btn {
@@ -313,8 +310,9 @@ section .btn:hover{
   color: #5D5FEF;
 }
 
-.unique-btn:hover {
+.cta-btn:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .primary-btn:hover {
@@ -322,28 +320,29 @@ section .btn:hover{
 }
 
 .secondary-btn:hover {
-  background-color: #E3E5FF;
+  background-color: rgba(92, 96, 255, 0.2);
   color: #4A4BDE;
 }
 
 @media (max-width: 768px) {
-  #unique-intro-section {
-    padding: 60px 15px;
+  #unique-intro {
+    padding: 60px 20px;
   }
 
-  #unique-intro-section h1 {
+  #unique-intro h1 {
     font-size: 2.5rem;
   }
 
-  #unique-intro-section p {
+  #unique-intro p {
     font-size: 1rem;
   }
 
-  .unique-btn {
+  .cta-btn {
     font-size: 1rem;
-    padding: 12px 30px;
+    padding: 12px 20px;
   }
 }
+
 
 
 
