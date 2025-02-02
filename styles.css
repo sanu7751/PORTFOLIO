@@ -205,12 +205,12 @@ body {
 
 @media (min-width: 769px) {
   .content {
-    margin-left: 150px; /* Add margin on the left side of the content */
+    margin-left: 120px; /* Add margin on the left side of the content */
   }
   
   .image {
     margin-top: 20px;
-    margin-right: 150px; /* Add margin on the left side of the image */
+    margin-right: 120px; /* Add margin on the left side of the image */
   }
 }
 
@@ -288,85 +288,16 @@ section .btn:hover{
 
 
 
-#intro {
-  
-  padding: 80px 0;
-  
-  border-radius: 8px;
-  
-}
-
-#intro .container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-#intro h1 {
-  font-family: 'Courier New', monospace;
-  font-size: 3rem;
-  
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-#intro .lead {
-  font-size: 1.2rem;
- 
-  margin-bottom: 40px;
-}
-
-#intro .row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#intro h3 {
-  font-size: 1.5rem;
-  
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-#intro .col-md-3 {
-  margin-bottom: 20px;
-}
-
-.info-card {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.info-card:hover {
-  transform: translateY(-10px);
-  
-}
-
-.highlight {
-  color: #1d72b8;
-}
-
-@media (max-width: 768px) {
-  #intro h1 {
-    font-size: 2.5rem;
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
   }
-
-  #intro .lead {
-    font-size: 1rem;
-  }
-
-  #intro .row {
-    justify-content: center;
-  }
-
-  .info-card {
-    margin-bottom: 20px;
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
 }
-
 
 
 
