@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: whitesmoke;
   color: #000000; 
   height: 100%; /* Ensure full height */
   overflow-x: hidden;
@@ -45,10 +45,50 @@ body {
 }
 .navbar-toggler {
   border: none !important;
+  
 }
 .navbar-toggler:focus {
   box-shadow: none;
 }
+/* Full-screen navbar on mobile */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1050; /* Makes sure the navbar appears on top */
+    overflow-y: auto;
+    height: 100vh; /* Full height of the screen */
+    padding-top: 60px; /* Adjust based on navbar height */
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1060; /* Ensure the button stays on top */
+  }
+
+  /* Ensure navbar links are centered and have some padding */
+  .navbar-nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: bolder;
+  }
+}
+
+
 
 
 
@@ -62,9 +102,8 @@ body {
   position: fixed;
   top: 55px;
   width: 100%;
-  background-color: #674cc4;
+  background-color: rgb(122, 126, 255);
   z-index: 5;
-  height:100px
 }
 .social-icons a {
   margin-left: 10px;
@@ -251,7 +290,8 @@ section .btn:hover{
 
 #unique-intro {
   padding: 80px 20px;
-  text-align: start;
+  
+  text-align: center;
   color: #000000;
   font-family: 'Arial', sans-serif;
 }
@@ -260,8 +300,7 @@ section .btn:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  
 }
 
 .unique-content {
@@ -350,6 +389,7 @@ section .btn:hover{
 
 #skills-section {
   padding: 50px 20px;
+  
   border-radius: 10px;
   text-align: center;
   overflow-x: hidden;
@@ -365,7 +405,7 @@ section .btn:hover{
 }
 
 .skill {
-  background: white;
+  
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -403,7 +443,7 @@ section .btn:hover{
 .progress-bar {
   width: 100%;
   height: 8px;
-  background: #ddd;
+  
   border-radius: 4px;
   overflow: hidden;
   position: relative;
