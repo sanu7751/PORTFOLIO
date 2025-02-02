@@ -1,7 +1,6 @@
 
 body {
-  background-color: whitesmoke;
-  color: #000000; 
+  color: rgb(51, 51, 51); 
   height: 100%; /* Ensure full height */
   overflow-x: hidden;
 }
@@ -10,7 +9,7 @@ body {
   font-weight: bolder;
 }
 .navbar-brand {
-  color: #000000 !important; 
+  
   font-weight: bolder;
   font-family: 'Courier New', monospace; 
   letter-spacing: 3px;
@@ -19,7 +18,7 @@ body {
   position: relative;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  color: #000000; 
+  
   transition: color 0.3s ease;
 }
 .nav-link::after {
@@ -84,7 +83,7 @@ body {
   .nav-link {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #000;
+    
     font-weight: bolder;
   }
 }
@@ -112,7 +111,7 @@ body {
   color: #ffffff;
 }
 .social-icons a:hover {
-  color: #000000; 
+  
 }
 .second-navbar .navbar-brand  {
   font-family: 'Poppins', sans-serif; 
@@ -243,7 +242,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   font-size: 1.5rem;
-  color: rgb(0, 0, 0);
+  
   font-family: 'Courier New', monospace; 
   line-height: 0.7; /* Matches the line-height of h1 */
   padding: 2px 5px; /* Add vertical and horizontal padding to prevent clipping */
@@ -289,185 +288,148 @@ section .btn:hover{
 
 
 
-#unique-intro {
-  padding: 80px 20px;
+#intro {
   
-  text-align: center;
-  color: #000000;
-  font-family: 'Arial', sans-serif;
-}
-
-.unique-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 80px 0;
+  
+  border-radius: 8px;
   
 }
 
-.unique-content {
-  max-width: 800px;
+#intro .container {
+  max-width: 1200px;
+  margin: auto;
 }
 
-#unique-intro h1 {
+#intro h1 {
+  font-family: 'Courier New', monospace;
   font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
   
-  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-#unique-intro p {
+#intro .lead {
   font-size: 1.2rem;
-  line-height: 1.7;
+ 
+  margin-bottom: 40px;
+}
+
+#intro .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#intro h3 {
+  font-size: 1.5rem;
   
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#intro .col-md-3 {
   margin-bottom: 20px;
 }
 
-.cta-buttons {
-  margin-top: 30px;
+.info-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cta-btn {
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  border-radius: 25px;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  margin: 10px;
+.info-card:hover {
+  transform: translateY(-10px);
+  
 }
 
-.primary-btn {
-  background-color: #5D5FEF;
-  color: white;
-  border: none;
-}
-
-.secondary-btn {
-  background-color: transparent;
-  border: 2px solid #5D5FEF;
-  color: #5D5FEF;
-}
-
-.cta-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.primary-btn:hover {
-  background-color: #4A4BDE;
-}
-
-.secondary-btn:hover {
-  background-color: rgba(92, 96, 255, 0.2);
-  color: #4A4BDE;
+.highlight {
+  color: #1d72b8;
 }
 
 @media (max-width: 768px) {
-  #unique-intro {
-    padding: 60px 20px;
-  }
-
-  #unique-intro h1 {
+  #intro h1 {
     font-size: 2.5rem;
   }
 
-  #unique-intro p {
+  #intro .lead {
     font-size: 1rem;
   }
 
-  .cta-btn {
-    font-size: 1rem;
-    padding: 12px 20px;
+  #intro .row {
+    justify-content: center;
+  }
+
+  .info-card {
+    margin-bottom: 20px;
   }
 }
 
 
 
 
-/* Skills Section Styling */
 
-#skills-section {
-  padding: 50px 20px;
-  
-  border-radius: 10px;
+
+
+.skills {
   text-align: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 700px;
-  margin: 20px auto;
-}
-
-.skill {
+  padding: 50px 0;
   
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  position: relative;
-  overflow: hidden;
 }
 
-.skill:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.skill::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(to right, #3498db, #6a11cb);
-  top: 0;
-  left: -100%;
-  transition: left 0.4s ease-in-out;
-}
-
-.skill:hover::before {
-  left: 0;
-}
-
-.skill h4 {
-  font-size: 18px;
-  margin-bottom: 5px;
+.skills h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
   color: #333;
 }
 
-.progress-bar {
-  width: 100%;
-  height: 8px;
-  
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
+.skill-bar {
+  margin: 20px 0;
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.progress-bar span {
-  display: block;
-  height: 100%;
-  background: linear-gradient(to right, #3498db, #6a11cb);
-  border-radius: 4px;
-  width: 0;
-  transition: width 1.5s ease-in-out;
+.skill-bar label {
+  font-size: 1.2em;
+  color: #555;
+  width: 30%;
 }
 
-/* Additional Animation Effects */
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
+.skill-bar progress {
+  width: 60%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  border: none;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out, width 2s ease-in-out; /* Smooth fade-in and width transition */
 }
 
-.skill:hover h4 {
-  animation: bounce 0.5s ease-in-out;
+.skill-bar progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
 }
+
+.skill-bar progress::-webkit-progress-value {
+  border-radius: 10px;
+  background-color: rgb(122, 126, 255); /* Your primary blue color */
+}
+
+.skill-bar span {
+  width: 10%;
+  font-size: 1em;
+  color: #333;
+}
+
+
+
 
 
 #soft-skills-section {
@@ -479,13 +441,13 @@ section .btn:hover{
 #soft-skills-section h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color: #2c3e50;
+  
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 #soft-skills-section p {
-  color: #555;
+  
   font-size: 16px;
   line-height: 1.6;
 }
@@ -493,32 +455,27 @@ section .btn:hover{
 #soft-skills-section .row {
   margin-top: 30px;
 }
-
 #soft-skills-section .col-md-4 {
   margin-bottom: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 #soft-skills-section .col-md-4:hover {
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 #soft-skills-section i {
   font-size: 50px;
-  color: #f39c12; /* Orange color for soft skills icons */
+  color: #f39c12; 
   margin-bottom: 15px;
 }
-
 #soft-skills-section h4 {
   font-size: 20px;
-  color: #34495e;
+  
   margin-bottom: 10px;
 }
-
 #soft-skills-section p {
   font-size: 14px;
-  color: #777;
+ 
 }
 @media (max-width: 768px) {
   #soft-skills-section .row {
@@ -527,24 +484,23 @@ section .btn:hover{
     justify-content: center;
     gap: 10px; /* Space between cards */
   }
-
   #soft-skills-section .col-md-4 {
-    flex: 0 0 calc(33.33% - 10px); /* 3 cards per row */
+    flex: 0 0 calc(33.33% - 10px); 
     max-width: calc(33.33% - 10px);
-    margin-bottom: 10px; /* Adjust spacing */
+    margin-bottom: 10px; 
   }
 
   #soft-skills-section i {
-    font-size: 30px; /* Smaller icons for mobile */
+    font-size: 30px;
     margin-bottom: 5px;
   }
 
   #soft-skills-section h4 {
-    font-size: 14px; /* Smaller titles for mobile */
+    font-size: 14px; 
   }
 
   #soft-skills-section p {
-    font-size: 12px; /* Smaller descriptions for mobile */
+    font-size: 12px;
   }
 }
 
@@ -565,24 +521,18 @@ section .btn:hover{
   font-family: Calibri, sans-serif;
   
 }
-
 .section-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color: #2c3e50; /* Dark color for headings */
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
-/* Carousel Wrapper */
 .carousel-wrapper {
   position: relative;
   overflow: hidden;
   max-width: 100%;
   padding: 20px 0;
 }
-
-/* Carousel */
 .carousel {
   display: flex;
   gap: 20px;
@@ -591,12 +541,9 @@ section .btn:hover{
   padding: 10px;
   scrollbar-width: none; /* For Firefox */
 }
-
 .carousel::-webkit-scrollbar {
   display: none; /* Hide scrollbar */
 }
-
-/* Carousel Card */
 .carousel-card {
   flex: 0 0 300px;
   background-color: #fff;
@@ -606,27 +553,20 @@ section .btn:hover{
   text-align: left;
   transition: transform 0.3s ease;
   cursor: pointer;
-  
 }
-
 .carousel-card h3 {
   font-size: 1.3rem;
-  color: #1e90ff;
   margin-bottom: 10px;
   
 }
-
 .carousel-card p {
   font-size: 0.9rem;
-  color: #333;
   line-height: 1.4;
+  color: black!important;
 }
-
 .carousel-card:hover {
   transform: scale(1.05);
 }
-
-/* Mobile Adjustments */
 @media (max-width: 768px) {
   .carousel-card {
     flex: 0 0 250px;
@@ -636,7 +576,6 @@ section .btn:hover{
   display: inline-flex;
   align-items: center;
   margin-top: 10px;
-  color: #007BFF;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -644,31 +583,24 @@ section .btn:hover{
   transform: translateY(10px);
   transition: all 0.3s ease;
 }
-
 .carousel-card:hover .explore-link {
   opacity: 1;
   transform: translateY(0);
 }
-
 .explore-link .arrow {
   margin-left: 5px;
   font-size: 20px;
   transition: transform 0.3s ease;
 }
-
 .carousel-card:hover .explore-link .arrow {
   transform: translateX(5px);
 }
-
 .explore-link span {
   margin-right: 5px;
 }
-
 .carousel-card {
   position: relative;
 }
-
-/* Removed the arrow from the ::after pseudo-element */
 .carousel-card::after {
   content: "";
   opacity: 0;
@@ -678,22 +610,18 @@ section .btn:hover{
 
 
 
-/* Container styling */
+
 .x {
   max-width: 600px;
   
   text-align: center;
 }
-
-/* Contact heading */
 .x h2 {
-  color: #2c3e50; /* Dark color for headings */
+  
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 2rem;
 }
-
-/* Form styling */
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -703,11 +631,9 @@ section .btn:hover{
 
 #contact-form label {
   font-size: 1rem;
-  color: #333;
+  
   font-weight: bold;
 }
-
-/* Input fields */
 #contact-form input,
 #contact-form textarea {
   width: 100%;
@@ -790,7 +716,7 @@ section .btn:hover{
 
 .final-message {
   font-size: 18px;
-  color: #ffffff;
+  color: white;
 }
 
 
@@ -798,7 +724,7 @@ section .btn:hover{
 /* Footer */
 .footer {
   background-color: rgb(205, 206, 255);
-  color: #0a002c;
+  
   text-align: center;
   padding: 20px 0;
 }
