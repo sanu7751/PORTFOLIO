@@ -184,7 +184,7 @@ body {
   font-family: 'Carlito', sans-serif;
   font-weight: 900;
   color: rgb(71, 75, 181);
-  font-size: 2.3rem;
+  font-size: 2rem;
   
   
 }
@@ -263,11 +263,13 @@ section .btn:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, rgba(67, 70, 144, 0.8), rgba(60, 60, 203, 0.8)),
-              radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px); /* Added dot pattern */
-  background-size: 20px 20px; /* Adjust the spacing of the dots */
+  /* Modern background style */
+  background: linear-gradient(135deg, rgba(123, 94, 255, 0.8), rgba(36, 104, 255, 0.8)), 
+              url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png'); /* Subtle texture added */
+  background-size: cover, cover; /* Ensure the texture and gradient cover the section */
+  background-blur: 10px; /* Optional for a subtle blur effect */
   color: white;
-  height: 250px; /* Increased height for better spacing */
+  height: 200px;
   flex-wrap: wrap;
   padding: 25px 0;
   margin: 0 auto;
@@ -289,8 +291,9 @@ section .btn:hover{
   align-items: center;
   flex: 1;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   min-width: 200px;
+  margin: 5px;
 }
 
 .info-subtext {
@@ -314,7 +317,7 @@ section .btn:hover{
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .info-section {
       height: auto;
       padding: 30px 0;
@@ -322,13 +325,15 @@ section .btn:hover{
 
   .info-item {
       width: 50%;
-      padding: 25px;
+      padding: 10px;
   }
 
   .info-item:last-child {
       width: 100%;
   }
 }
+
+
 
 
 
