@@ -99,7 +99,7 @@ body {
   z-index: 10;
 }
 .second-navbar {
-  position: fixed;
+  
   top: 55px;
   width: 100%;
   background-color: rgb(122, 126, 255);
@@ -306,20 +306,19 @@ section .btn:hover{
 
 .skills {
   text-align: center;
-  padding: 50px 0;
-  
+  padding: 10px 0;
 }
 
 .skills h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
   color: #333;
 }
 
 .skill-bar {
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: left;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -327,35 +326,40 @@ section .btn:hover{
   justify-content: space-between;
 }
 
+.skill-bar i {
+  font-size: 1.5em;
+  color: rgb(122, 126, 255);
+  width: 10%;
+  text-align: center;
+}
+
 .skill-bar label {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #555;
-  width: 30%;
+  width: 25%;
 }
 
 .skill-bar progress {
-  width: 60%;
-  height: 20px;
-  border-radius: 10px;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
   background-color: #e0e0e0;
   border: none;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 1s ease-in-out, width 2s ease-in-out; /* Smooth fade-in and width transition */
 }
 
 .skill-bar progress::-webkit-progress-bar {
   background-color: #e0e0e0;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .skill-bar progress::-webkit-progress-value {
-  border-radius: 10px;
-  background-color: rgb(122, 126, 255); /* Your primary blue color */
+  border-radius: 5px;
+  background-color: rgb(122, 126, 255);
 }
 
 .skill-bar span {
   width: 10%;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #333;
 }
 
