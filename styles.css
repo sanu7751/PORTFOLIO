@@ -99,7 +99,7 @@ body {
   z-index: 10;
 }
 .second-navbar {
-  
+  position: fixed;
   top: 55px;
   width: 100%;
   background-color: rgb(122, 126, 255);
