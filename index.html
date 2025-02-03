@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,22 +69,6 @@
           </nav>
 
 
-
-
-          
-          <nav class="navbar second-navbar">
-            <div class="container">
-              <div class="silver-block"></div>
-              <span class="navbar-brand" >SANU KUMAR PANDA</span>
-              <div class="social-icons">
-                <a href="https://github.com/sanu7751" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/sanu-kumar-panda07" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/kumar_.07?igsh=MmM3aHFncTJodjd0" target="_blank"><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-          </nav>
-
-
         <!-- Feedback Button Container -->
         <!-- Feedback Button -->
         <a href="https://wa.me/7205343991" class="feedback-btn" target="_blank">
@@ -110,7 +96,7 @@
               <h5>
                 <span id="dynamic-profession" data-aos="fade-up" data-aos-delay="300"></span>
               </h5>
-              <a href="resume.html" type="button" class="btn" data-aos="fade-up" data-aos-delay="400"><i class="fa fa-file-pdf" ></i> <span style="color: rgb(255, 247, 0);">View</span> My CV >
+              <a href="resume.html" type="button" class="btn" data-aos="fade-up" data-aos-delay="400"><i class="fa fa-file-pdf" ></i> <span style="color: rgb(255, 204, 0);">View</span> My CV >
               </a>
             </div> 
             <div class="image" data-aos="fade-up" data-aos-delay="500">
@@ -118,33 +104,45 @@
             </div>
           </div>
         </section>
-        <br><br><br>
+    
 
-        <section id="introduction" style="padding: 80px 0;">
-          <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
-              <h2 id="intro-heading" style="font-size: 3.5em; color: rgb(122, 126, 255); opacity: 0; animation: fadeInUp 1.5s ease-out 0.5s forwards;">Hi, I'm Sanu</h2>
-              <p id="intro-paragraph" style="font-size: 1.3em; color: #555; margin: 20px 0; opacity: 0; animation: fadeInUp 1.5s ease-out 1s forwards;">I’m a passionate Web Developer with expertise in building responsive and interactive web applications. My focus is on delivering high-quality solutions with a user-centric approach, ensuring seamless experiences across all devices.</p>
-              
-              <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
-                  <div id="frontend" class="intro-box" style="flex: 1; min-width: 250px; padding: 20px; border: 1px solid rgba(122, 126, 255, 0.4); border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); opacity: 0; animation: fadeInUp 1.5s ease-out 1.5s forwards;">
-                      <h3 style="font-size: 1.8em; color: rgb(92, 96, 255);">Frontend Development</h3>
-                      <p style="color: #555;">I specialize in crafting beautiful and functional frontends using HTML, CSS, JavaScript, React, and more. Ensuring smooth navigation and a visually pleasing experience is my top priority.</p>
-                  </div>
-                  <div id="backend" class="intro-box" style="flex: 1; min-width: 250px; padding: 20px; border: 1px solid rgba(122, 126, 255, 0.4); border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); opacity: 0; animation: fadeInUp 1.5s ease-out 2s forwards;">
-                      <h3 style="font-size: 1.8em; color: rgb(92, 96, 255);">Backend Development</h3>
-                      <p style="color: #555;">With experience in Node.js, Express.js, and databases like PostgreSQL and MongoDB, I ensure reliable and efficient backend solutions that drive functionality.</p>
-                  </div>
-                  <div id="ml" class="intro-box" style="flex: 1; min-width: 250px; padding: 20px; border: 1px solid rgba(122, 126, 255, 0.4); border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); opacity: 0; animation: fadeInUp 1.5s ease-out 2.5s forwards;">
-                      <h3 style="font-size: 1.8em; color: rgb(92, 96, 255);">Machine Learning</h3>
-                      <p style="color: #555;">I apply machine learning models to solve real-world problems, helping businesses gain actionable insights using Python, TensorFlow, and Scikit-learn.</p>
+        <!-- Information Section with Header -->
+        <div class="info-section">
+          <div class="info-header">Here’s what I bring to the table</div>
+          <div class="info-item">
+              <div class="info-subtext" id="experience-count">0</div>
+              <div class="info-title">Experience</div>
+              <div class="info-description" id="experience-desc">+ Months</div>
+          </div>
+          <div class="info-item">
+              <div class="info-subtext" id="projects-count">0</div>
+              <div class="info-title">Projects</div>
+              <div class="info-description" id="projects-desc">+</div>
+          </div>
+          <div class="info-item">
+              <div class="info-subtext" id="support-count">0</div>
+              <div class="info-title">Support System</div>
+              <div class="info-description" id="support-desc">*24/7</div>
+          </div>
+      </div>
+
+
+        <section id="about" class="about-section">
+          <div class="con">
+              <div class="about-content">
+                  <h2>About Me</h2>
+                  <p>Hello! I'm <strong>Sanu Kumar Panda</strong>, a passionate web developer with a keen interest in creating innovative web applications and systems. I specialize in frontend development using technologies like HTML, CSS, JavaScript, React, and more.</p>
+                  <p>With a strong foundation in web development and machine learning, I strive to create user-friendly and efficient applications. I am constantly learning new technologies to stay ahead in this fast-paced industry.</p>
+                  <p>On my journey, I have had the privilege of working on various projects, including hackathons and real-world applications, which have sharpened my skills and expanded my knowledge.</p>
+                  <button id="learn-more-btn" onclick="toggleInfo()">Learn More</button>
+                  <div id="more-info" class="hidden">
+                      <p>In addition to my technical skills, I am a problem-solver with a passion for working collaboratively on projects. I believe in continuous learning and love exploring new technologies to improve my development skills. When I'm not coding, you can find me enhancing my communication skills through public speaking and volunteering with local organizations.</p>
                   </div>
               </div>
-      
-              <p style="font-size: 1.2em; color: #555; margin: 30px 0; opacity: 0; animation: fadeInUp 1.5s ease-out 3s forwards;">With a strong foundation in both frontend and backend technologies, I am constantly evolving my skills to build innovative solutions that drive progress. Whether you need a stunning website or a complex web application, I’m here to bring your ideas to life.</p>
-      
-        
           </div>
       </section>
+      
+  
       
       
         <br><br><br>
@@ -547,6 +545,56 @@ const skillsSection = document.querySelector('.skills');
 observer.observe(skillsSection);
 
 </script>
+<script>
+  function toggleInfo() {
+    const moreInfo = document.getElementById("more-info");
+    const button = document.getElementById("learn-more-btn");
 
+    if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+        moreInfo.style.display = "block";
+        button.innerText = "Show Less";
+    } else {
+        moreInfo.style.display = "none";
+        button.innerText = "Learn More";
+    }
+}
+</script>
+
+<script>
+  // Function to animate counting up the numbers
+  function countUp(elementId, endValue, duration, descriptionId, suffix) {
+      let startValue = 0;
+      let increment = endValue / (duration / 50); // Calculate increment
+      let element = document.getElementById(elementId);
+      let description = document.getElementById(descriptionId);
+      
+      let interval = setInterval(function() {
+          startValue += increment;
+          if (startValue >= endValue) {
+              startValue = endValue;
+              clearInterval(interval); // Stop when the value reaches the end
+              description.textContent = suffix; // Add the suffix after count is complete
+          }
+          element.textContent = Math.round(startValue); // Update the number displayed
+      }, 50);
+  }
+
+  // Function to trigger count up on scroll into view
+  function handleScrollAnimation() {
+      let section = document.querySelector(".info-section");
+      let position = section.getBoundingClientRect();
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+          countUp("experience-count", 2, 2000, "experience-desc", "+ Months");  // 2+ months in 2 seconds
+          countUp("projects-count", 5, 2000, "projects-desc", "+");             // 5+ projects in 2 seconds
+          countUp("support-count", 24, 2000, "support-desc", "*24/7");         // 24/7 support in 2 seconds
+          window.removeEventListener("scroll", handleScrollAnimation); // Remove the listener after it's triggered
+      }
+  }
+
+  // Add event listener for scroll
+  window.addEventListener("scroll", handleScrollAnimation);
+</script>
+
+</script>
 </body>
 </html>
