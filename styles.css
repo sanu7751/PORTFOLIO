@@ -42,7 +42,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   color: black; /* Set initial color */
-  padding: 5px 10px; /* Add padding around links */
+  
   position: relative; /* For positioning the pseudo-element */
   transition: color 0.3s; /* Smooth transition for color */
 }
@@ -148,7 +148,8 @@ body {
   }
 
   .menu ul li {
-    margin: 0 20px;
+    margin: 0 10px;
+    
   }
 }
 
@@ -170,7 +171,7 @@ body {
   text-align: start;
   font-family: 'Roboto', sans-serif;
   display: flex;
-  justify-content: space-between;
+  
   
 }
 
@@ -231,7 +232,7 @@ body {
 
 
 #about-section h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: 'Carlito', sans-serif;
 }
@@ -293,6 +294,25 @@ section .btn:active {
   outline: none;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Keeps shadow effect */
 }
+#about-section p {
+  font-size: 1.2rem; /* Adjust font size for readability */
+  font-family: 'Roboto', sans-serif; /* Keep it consistent with other text */
+  color: #5d5d5d; /* Dark grey for good contrast */
+  line-height: 1.6; /* Improve readability */
+  max-width: 100%; /* Control paragraph width */
+  /* Neatly align text */
+  margin-top: 20px;
+  font-family: 'Carlito', sans-serif;
+}
+
+/* Add hover effect for slight emphasis */
+#about-section p:hover {
+  color: #5d5d5d; /* Slightly darker shade on hover */
+  transition: color 0.3s ease-in-out;
+  font-family: 'Carlito', sans-serif;
+}
+
+
 
 @keyframes fade-in-down {
   from {
