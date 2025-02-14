@@ -1075,13 +1075,13 @@ h3 {
 /* Animation for color-changing effect */
 @keyframes colorChange {
   50% {
-    color: #003a8c;
+    color: #ff3b3b;
   }
   
   75% {
     color: white;
   }
   100% {
-    color: #003a8c;
+    color: #ff3b3b;
   }
 }
