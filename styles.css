@@ -1,4 +1,5 @@
 
+
 body {
   color: rgb(51, 51, 51); 
   height: 100%; /* Ensure full height */
@@ -989,6 +990,8 @@ h3 {
 .flower {
   width: 150px;
   height: 150px;
+  margin-bottom:30px;
+  
 }
 
 /* Petal Styling */
