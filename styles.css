@@ -314,6 +314,37 @@ section .btn:active {
   transition: color 0.3s ease-in-out;
   font-family: 'Carlito', sans-serif;
 }
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+/* Icon Colors */
+.github { color: rgb(77, 77, 77); }
+.facebook { color: rgb(62, 155, 255); }
+.twitter { color: rgb(0, 0, 0); }
+.instagram { color: #ff4000; }
+.linkedin { color: #0077B5; }
+
+.social-btn:hover {
+  opacity: 0.8;
+}
+
 
 
 
@@ -991,7 +1022,7 @@ h3 {
   width: 150px;
   height: 150px;
   margin-bottom:30px;
-  
+
 }
 
 /* Petal Styling */
