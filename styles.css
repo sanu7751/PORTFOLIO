@@ -269,12 +269,12 @@ body {
 section .btn {
   display: inline-block; /* Ensures it's treated as a button */
   text-decoration: none; /* Removes underline */
-  background-color: rgb(49, 50, 120);
+  background-color: rgb(6, 186, 0);
   margin-top: 20px;
   font-weight: 800;
   color: white;
-  font-family: 'Courier New', monospace; 
-  padding: 5px 50px;
+  font-family: 'Carlito', sans-serif;
+  padding: 5px 10px;
   font-size: 1.2rem;
   position: relative;
   z-index: 1;
@@ -282,17 +282,19 @@ section .btn {
 }
 
 section .btn:hover {
-  background-color: rgb(49, 50, 120);
+ 
+  background-color: rgb(6, 186, 0);
   color: white;
   
 }
 
 section .btn:focus,
 section .btn:active {
-  background-color: rgb(49, 50, 120) !important; /* Prevents color change */
+  
+  background-color: rgb(6, 186, 0) !important; /* Prevents color change */
   color: white !important;
   outline: none;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Keeps shadow effect */
+  
 }
 #about-section p {
   font-size: 1rem; /* Adjust font size for readability */
@@ -980,7 +982,58 @@ h3 {
   text-transform: uppercase;
   padding: 20px;
   box-sizing: border-box;
+  
 }
+
+/* Flower Styling */
+.flower {
+  width: 150px;
+  height: 150px;
+}
+
+/* Petal Styling */
+.petal {
+  fill: #ff4081;
+  transform-origin: center;
+  transform: scale(0) rotate(0deg);
+  opacity: 0;
+  animation: bloom 2s ease-in-out forwards;
+}
+
+/* Individual Petal Delay for Natural Bloom Effect */
+.petal1 { animation-delay: 0s; }
+.petal2 { animation-delay: 0.2s; }
+.petal3 { animation-delay: 0.4s; }
+.petal4 { animation-delay: 0.6s; }
+.petal5 { animation-delay: 0.8s; }
+.petal6 { animation-delay: 1s; }
+.petal7 { animation-delay: 1.2s; }
+.petal8 { animation-delay: 1.4s; }
+
+/* Flower Center */
+.center {
+  fill: #ffcc00;
+  transform: scale(0);
+  animation: appear 1.5s ease-in-out 1.5s forwards;
+}
+
+/* Petal Bloom Animation */
+@keyframes bloom {
+  0% { transform: scale(0) rotate(0deg); opacity: 0; }
+  50% { transform: scale(0.8) rotate(15deg); opacity: 0.5; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+/* Center Appearing Animation */
+@keyframes appear {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+
+
+
 
 /* Welcome text with letter animation */
 .welcome-text {
